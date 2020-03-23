@@ -1,0 +1,68 @@
+html {
+  background-color: aquamarine;
+  line-height: 150%;
+}
+main {
+  font-family: Rubik;
+}
+#heading1 {
+  text-align: center;
+  font-family: Raleway;
+  background-color: lawngreen;
+  margin: -10px 0px -10px 0px;
+  padding: 10px;
+  font-size: 2em;
+  font-weight: 400;
+  border-radius: 0% 0% 15% 15%;
+}
+main {
+  width: 70%;
+  margin: 15px auto;
+  padding: 0 20px 20px 20px;
+  border: 1.5px solid rgba(20, 18, 18, 0.801);
+}
+.Spisok {
+  margin: 0px 0px 0px 20px;
+  list-style-image: url(/geekbrain/image/stormtrooper.svg);
+  list-style-position: inside;
+}
+nav a {
+  color: blue;
+  font-size: 1.1em;
+  font-family: Kurale;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.OpisanieTovara {
+  font-weight: 400;
+  text-align: left;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+main img {
+  display: block;
+  margin: auto;
+  outline: 2px solid goldenrod;
+  border: 3px solid burlywood;
+}
+input[type="text"] {
+  height: 2em;
+  width: auto;
+
+  margin: 0px 0px 0px 0px;
+}
+input[type="password"] {
+  height: 2em;
+
+  margin: 5px 0px 0px 17px;
+}
+.catalog {
+  text-align: center;
+}
+.catalog a {
+  text-align: center;
+}
