@@ -40,50 +40,74 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <h1 id="heading1">Добро пожаловать в&nbsp;гостевую к&nbsp;Борису</h1>
-    <nav>
-    <ul>
-    <li><a href="index.html">На&nbsp;главную</a></li>
-    <li> <a href='catalog.html'> Каталог о&nbsp;Борисе</a>
-    <ul>
-    <li> <a href="catalog/Ingener.html" >Борис инженер</a></li>
-    
-    <li><a href="catalog/KVN.html" >Борис КВН</a></li>
-    <li>
-    <a href="catalog/travelblog.html">Борис travel blog</a>
-    </li>
-    </ul>
-    </li>
-    <li><a href="#contact">Контакты Бориса</a></li>
-    </ul>
-  </nav>
- <main>
-    <div>
-    <form action="#">
-    Ваше имя <input type="text" placeholder="Ваше имя" autofocus /> <br />
-    Пароль <input type="password" placeholder="Пароль" /> <br />
-    Что вы&nbsp;хотите написать: что-то приятное
-    <input type="radio" name="guest" checked /> обосрать обидчика
-    <input type="radio" name="guest" />
-    <br>
-    <textarea rows="5" cols="30" placeholder="Пиши сюда"/></textarea> <br>
-    <input type="submit" value="Отправить" >
-    <input type="reset" value="Сброс">
-    </form>
-    </div>
-    <div> Нужно было встроить карту и&nbsp;вот где я&nbsp;нахожусь например</div>
-   </main> 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.718401233472!2d37.36781841543177!3d55.815488994623585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54647959e5801%3A0xf2d9fd64fef665f1!2z0JrRgNCw0YHQvdC-0LPQvtGA0YHQutC40Lkg0LHRg9C7LiwgMTMsINCa0YDQsNGB0L3QvtCz0L7RgNGB0LosINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MzQwMQ!5e0!3m2!1sru!2sru!4v1584949908177!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <header>
+      <h1 id="heading1">Добро пожаловать в&nbsp;гостевую к&nbsp;Борису</h1>
+      <div class="logo">вот такое лого</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">На&nbsp;главную</a></li>
+          <li>
+            <a href="catalog.html"> Каталог о&nbsp;Борисе</a>
+            <ul>
+              <li><a href="catalog/Ingener.html">Борис инженер</a></li>
+              <li><a href="catalog/KVN.html">Борис КВН</a></li>
+              <li>
+                <a href="catalog/travelblog.html">Борис travel blog</a>
+              </li>
+            </ul>
+          </li>
+          <li>Гостевая Бориса</li>
+          <li><a href="#contact">Контакты Бориса</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <form action="#">
+          <div class="textarea">
+            Ваше имя <input type="text" placeholder="Ваше имя" autofocus />
+          </div>
+          Пароль <input type="password" placeholder="Пароль" /> <br />
+          E-mail <input type="email" placeholder="E-mail" /> <br />
+          <span>Что вы&nbsp;хотите написать: </span> <br />
+          что-то приятное <input type="radio" name="guest" checked /> обосрать
+          обидчика
+          <input type="radio" name="guest" />
+          <br />
+          <p class="textarea">
+            <textarea rows="5" cols="30" placeholder="Пишем здесь"> </textarea>
+          </p>
+          <br />
+          <input type="submit" value="Отправить" />
+          <input type="reset" value="Сброс" />
+        </form>
+      </div>
+      <div>
+        Нужно было встроить карту и&nbsp;вот где я&nbsp;нахожусь например
+      </div>
+    </main>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.718401233472!2d37.36781841543177!3d55.815488994623585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54647959e5801%3A0xf2d9fd64fef665f1!2z0JrRgNCw0YHQvdC-0LPQvtGA0YHQutC40Lkg0LHRg9C7LiwgMTMsINCa0YDQsNGB0L3QvtCz0L7RgNGB0LosINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MzQwMQ!5e0!3m2!1sru!2sru!4v1584949908177!5m2!1sru!2sru"
+      width="100%"
+      height="374"
+      frameborder="0"
+      style="border:0;"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
   </body>
-    <hr />
-    <address>
+  <hr />
+  <address>
     <ul id="contact">
-    <li><a href="https://www.instagram.com/b.resler/">Instagram</a></li>
-    <li>Tel:+7-922-796-55-35</li>
-    <li>Email: <a href="mailto:9bres0@gmail.com">9bres0@gmail. com</a></li>
+      <li><a href="https://www.instagram.com/b.resler/">Instagram</a></li>
+      <li>Tel:+7-922-796-55-35</li>
+      <li>Email: <a href="mailto:9bres0@gmail.com">9bres0@gmail. com</a></li>
     </ul>
-    </address>
-    <a href="#heading1"><div class="center">наверх</div> </a>
-    <a href="index.html">Обратно на&nbsp;главную.</a>
-    <footer role="contentinfo">&copy;&nbsp;2020&nbsp;B. Resler</footer>
-    </html>
+  </address>
+  <a href="#heading1"><div class="center">наверх</div> </a>
+  <a href="index.html">Обратно на&nbsp;главную.</a>
+  <footer role="contentinfo">
+    <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
+  </footer>
+</html>

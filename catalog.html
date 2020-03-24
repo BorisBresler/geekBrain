@@ -40,57 +40,119 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <h1 id="heading1">Здесь располагается каталог о&nbsp;Борисе</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">На&nbsp;главную</a></li>
-        <li><a href="catalog/Ingener.html">Борис инженер</a></li>
-        <li><a href="catalog/KVN.html">Борис КВН</a></li>
-        <li>
-          <a href="catalog/travelblog.html">Борис travel blog</a>
-        </li>
-        <li><a href="guestbook.html">Гостевая Бориса</a></li>
-        <li><a href="#contact">Контакты Бориса</a></li>
-      </ul>
-    </nav>
-    <hr />
+    <header>
+      <h1 id="heading1">Здесь располагается каталог о&nbsp;Борисе</h1>
+      <div class="logo">вот такое лого</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">На&nbsp;главную</a></li>
+          <li>
+            Каталог о Борисе
+            <ul>
+              <li><a href="catalog/Ingener.html">Борис инженер</a></li>
+              <li><a href="catalog/KVN.html">Борис КВН</a></li>
+              <li>
+                <a href="catalog/travelblog.html">Борис travel blog</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="guestbook.html">Гостевая Бориса</a></li>
+          <li><a href="#contact">Контакты Бориса</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
     <main>
-      <h3 class="catalog">Борис инженер</h3>
-      <img
-        src="image/bigboss.JPG"
-        alt="Boss for you manufactory"
-        title="Вашему цеху начальник не нужен?"
-        width="180px"
-        height="200px"
-      />
-      <br />
-      <div class="catalog">
-        <a href="catalog/Ingener.html">Подробнее</a>
+      <div class="product">
+        <h3 class="catalog">Борис инженер</h3>
+        <img
+          src="image/bigboss.JPG"
+          alt="Boss for you manufactory"
+          title="Вашему цеху начальник не нужен?"
+          width="180px"
+          height="200px"
+        />
+        <div class="catalog">
+          <form action="#">
+            <input type="button" value="buy" />
+          </form>
+          <a href="catalog/Ingener.html">Подробнее</a>
+        </div>
       </div>
-      <h3 class="catalog">Борис весельчак</h3>
-      <img
-        src="image/kapitan.JPG"
-        alt="Capitan B.Resler"
-        title="Capitan B.Resler"
-        width="180px"
-        height="200px"
-      />
-      <br />
-      <div class="catalog">
-        <a href="catalog/KVN.html">Подробнее</a>
+      <div class="product">
+        <h3 class="catalog">Борис весельчак</h3>
+        <img
+          src="image/kapitan.JPG"
+          alt="Capitan B.Resler"
+          title="Capitan B.Resler"
+          width="180px"
+          height="200px"
+        />
+        <div class="catalog">
+          <form action="#">
+            <input type="button" value="buy" />
+          </form>
+          <a href="catalog/KVN.html">Подробнее</a>
+        </div>
       </div>
-      <h3 class="catalog">Борис путешественник</h3>
-      <img
-        src="image/travel.JPG"
-        alt="travel Boris"
-        title="Travel Boris"
-        width="150px"
-        height="200px"
-      />
-      <br />
-      <div class="catalog">
-        <a href="catalog/travelblog.html">Подробнее</a>
+      <div class="product">
+        <h3 class="catalog">Борис путешественник</h3>
+        <img
+          src="image/travel.JPG"
+          alt="travel Boris"
+          title="Travel Boris"
+          width="150px"
+          height="200px"
+        />
+        <div class="catalog">
+          <form action="#">
+            <input type="button" value="buy" />
+          </form>
+          <a href="catalog/travelblog.html">Подробнее</a>
+        </div>
       </div>
+      <br />
+      <table>
+        <caption>
+          <thead>
+            <tr>
+              <th rowspan="2">Здесь сказано что внизу у&nbsp;нас товары</th>
+              <th rowspan="2">Здесь например еденица измерения</th>
+              <th colspan="3">Заголовок о&nbsp;чем-то общем</th>
+            </tr>
+            <tr>
+              <td>цена в&nbsp;руб</td>
+              <td>цена в&nbsp;у.&nbsp;е.</td>
+              <td>цена по&nbsp;бартеру</td>
+            </tr>
+          </thead>
+        </caption>
+        <tbody>
+          <tr>
+            <th rowspan="2">
+              товар с&nbsp;разными единицами измерения например
+            </th>
+            <td>кг</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>шт</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="2">Итого</th>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+        </tfoot>
+      </table>
     </main>
   </body>
   <hr />
@@ -103,5 +165,7 @@
   </address>
   <a href="#heading1"><div class="center">наверх</div> </a>
   <a href="index.html">Обратно на&nbsp;главную.</a>
-  <footer role="contentinfo">&copy;&nbsp;2020&nbsp;B. Resler</footer>
+  <footer role="contentinfo">
+    <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
+  </footer>
 </html>

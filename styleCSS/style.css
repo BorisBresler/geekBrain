@@ -9,31 +9,42 @@ main {
   text-align: center;
   font-family: Raleway;
   background-color: lawngreen;
-  margin: -10px 0px -10px 0px;
-  padding: 10px;
+  margin: -5px -5% 0px -5px;
+  padding: 10px 0px 0px 0px;
   font-size: 2em;
   font-weight: 400;
   border-radius: 0% 0% 15% 15%;
+}
+hr {
+  margin: 0px -5% -5px -5%;
+  padding: 0px;
 }
 main {
   width: 70%;
   margin: 15px auto;
   padding: 0 20px 20px 20px;
   border: 1.5px solid rgba(20, 18, 18, 0.801);
+  overflow: hidden;
 }
 .Spisok {
   margin: 0px 0px 0px 20px;
   list-style-image: url(/geekbrain/image/stormtrooper.svg);
   list-style-position: inside;
 }
+ul.Spisok li {
+  text-align: left;
+}
+nav {
+  font-family: Kurale;
+  font-size: 1.1em;
+}
 nav a {
   color: blue;
-  font-size: 1.1em;
-  font-family: Kurale;
 }
 
 nav ul {
   list-style-type: none;
+  text-align: right;
 }
 
 .OpisanieTovara {
@@ -49,6 +60,9 @@ main img {
   outline: 2px solid goldenrod;
   border: 3px solid burlywood;
 }
+main img:hover {
+  outline: 0px;
+}
 input[type="text"] {
   height: 2em;
   width: auto;
@@ -60,9 +74,111 @@ input[type="password"] {
 
   margin: 5px 0px 0px 17px;
 }
+input[type="email"] {
+  height: 2em;
+
+  margin: 5px 0px 0px 25px;
+}
+input[type="email"]:focus {
+  color: forestgreen;
+  background-color: black;
+}
 .catalog {
   text-align: center;
 }
 .catalog a {
   text-align: center;
+}
+.catalog::first-letter {
+  font-size: 1.25em;
+  font-family: Lemonada;
+}
+nav a:hover {
+  color: rebeccapurple;
+}
+nav a:active {
+  color: green;
+}
+nav a:hover:after {
+  content: ">";
+  color: rebeccapurple;
+}
+nav a:hover::before {
+  content: "<";
+  color: rebeccapurple;
+}
+input[type="text"] {
+  text-transform: capitalize;
+}
+p.textarea:first-letter {
+  text-transform: uppercase;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+td,
+th {
+  width: 150px;
+  height: 100px;
+  border: 2px solid black;
+}
+thead th {
+  height: 200px;
+}
+nav li {
+  display: inline-block;
+}
+/*
+nav li ul {
+  display: none;
+}
+nav li:hover ul {
+  display: inline-block;
+}
+*/
+.product {
+  float: left;
+  margin: 20px;
+}
+.logo {
+  width: 100px;
+  height: 50px;
+  background-color: navajowhite;
+  color: dimgrey;
+  float: left;
+  position: absolute;
+  left: 50px;
+  z-index: -1;
+}
+header {
+  display: block;
+  height: 100px;
+  position: relative;
+}
+footer {
+  display: block;
+  height: 50px;
+  background-color: dimgrey;
+  text-align: end;
+  position: relative;
+}
+.footer {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+input[value="buy"]:hover {
+  background-color: tomato;
+}
+input[value="buy"]:active {
+  background-color: goldenrod;
+}
+.imgBlock {
+  float: left;
+  margin-right: 20px;
+}
+.bezobt {
+  clear: both;
 }

@@ -40,36 +40,42 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <h3 id="heading1">
-      Здесь будет страница с&nbsp;контентом обо мне и&nbsp;юморок
-    </h3>
-    <nav>
-      <ul>
-        <li><a href="../index.html">На&nbsp;главную</a></li>
-        <li>
-          <a href="../catalog.html"> Каталог о&nbsp;Борисе</a>
-          <ul>
-            <li>
-              <a href="Ingener.html">Борис инженер</a>
-            </li>
-            <li>
-              <a href="travelblog.html">Борис travel blog</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="../guestbook.html">Гостевая Бориса</a></li>
-        <li><a href="#contact">Контакты Бориса</a></li>
-      </ul>
-    </nav>
-    <img
-      src="../image/kapitan.JPG"
-      alt="Capitan B.Resler"
-      title="Capitan B.Resler"
-      width="400px"
-      height="400px"
-    />
+    <header>
+      <h3 id="heading1">
+        Здесь будет страница с&nbsp;контентом обо мне и&nbsp;юморок
+      </h3>
+      <div class="logo">вот такое лого</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">На&nbsp;главную</a></li>
+          <li>
+            <a href="../catalog.html"> Каталог о&nbsp;Борисе</a>
+            <ul>
+              <li>
+                <a href="Ingener.html">Борис инженер</a>
+              </li>
+              <li>Борис КВН</li>
+              <li>
+                <a href="travelblog.html">Борис travel blog</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../guestbook.html">Гостевая Бориса</a></li>
+          <li><a href="#contact">Контакты Бориса</a></li>
+        </ul>
+      </nav>
+    </header>
     <hr />
     <main clas="OpisanieTovara">
+      <div class="imgBlock">
+        <img
+          src="../image/kapitan.JPG"
+          alt="Capitan B.Resler"
+          title="Capitan B.Resler"
+          width="400px"
+          height="400px"
+        />
+      </div>
       <pre>
      А здесь собственно будет еще контент.
     
@@ -108,6 +114,9 @@
             Возможно контент добереться и до сюда.
         </pre
       >
+      <form action="#">
+        <input type="button" value="buy" />
+      </form>
     </main>
   </body>
   <hr />
@@ -120,5 +129,7 @@
   </address>
   <a href="#heading1"><div class="center">наверх</div> </a>
   <a href="../index.html">Обратно на&nbsp;главную.</a>
-  <footer role="contentinfo">&copy;&nbsp;2020&nbsp;B. Resler</footer>
+  <footer role="contentinfo">
+    <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
+  </footer>
 </html>

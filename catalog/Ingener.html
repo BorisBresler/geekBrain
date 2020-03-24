@@ -40,26 +40,32 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <h3 id="heading1">What about B.&nbsp;Resler</h3>
-    <nav>
-      <ul>
-        <li><a href="../index.html">На&nbsp;главную</a></li>
-        <li>
-          <a href="../catalog.html"> Каталог о&nbsp;Борисе</a>
-          <ul>
-            <li><a href="KVN.html">Борис КВН</a></li>
-            <li>
-              <a href="travelblog.html">Борис travel blog</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="../guestbook.html">Гостевая Бориса</a></li>
-        <li><a href="#contact">Контакты Бориса</a></li>
-      </ul>
-    </nav>
-    <img src="../image/borisMain400.jpg" src="B.Resler" title="B.Resler" />
+    <header>
+      <h3 id="heading1">What about B.&nbsp;Resler</h3>
+      <div class="logo">вот такое лого</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">На&nbsp;главную</a></li>
+          <li>
+            <a href="../catalog.html"> Каталог о&nbsp;Борисе</a>
+            <ul>
+              <li>Борис инженер</li>
+              <li><a href="KVN.html">Борис КВН</a></li>
+              <li>
+                <a href="travelblog.html">Борис travel blog</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../guestbook.html">Гостевая Бориса</a></li>
+          <li><a href="#contact">Контакты Бориса</a></li>
+        </ul>
+      </nav>
+    </header>
     <hr />
     <main clas="OpisanieTovara">
+      <div class="imgBlock">
+        <img src="../image/borisMain400.jpg" src="B.Resler" title="B.Resler" />
+      </div>
       <p class="Osnova">
         Итак дорогой друг. Ты&nbsp;все-таки решил узнать побольше о&nbsp;данном
         товаре.
@@ -67,48 +73,56 @@
         На&nbsp;данной странице, ты&nbsp;увидишь примеры что данный товар
         подойдет, как инженерный работник.
       </p>
-      <h3 class="catalog">
+      <h3 class="catalog bezobt">
         Например я&nbsp;могу быть начальником вашего цеха.<br />
       </h3>
+      <div class="imgBlock">
+        <img
+          src="../image/bigboss.JPG"
+          alt="Boss for you manufactory"
+          title="Вашему цеху начальник не нужен?"
+          width="400px"
+          height="400px"
+        />
+      </div>
       <div>
         Только посмотрите как я&nbsp;буду красиво смотреться на&nbsp;ежегодных
         календарях.
       </div>
-
-      <img
-        src="../image/bigboss.JPG"
-        alt="Boss for you manufactory"
-        title="Вашему цеху начальник не нужен?"
-        width="400px"
-        height="400px"
-      />
-      <h3 class="catalog">Я&nbsp;буду обкашливать ваши вопросики 24/7.</h3>
+      <h3 class="catalog bezobt">
+        Я&nbsp;буду обкашливать ваши вопросики 24/7.
+      </h3>
+      <div class="imgBlock">
+        <img
+          src="../image/obka6livanieVoprosov.png"
+          alt="24/7"
+          title="24/7"
+          width="320px"
+          height="400px"
+        />
+      </div>
       <div>В&nbsp;любом месте и&nbsp;в&nbsp;любом состоянии.</div>
-      <img
-        src="../image/obka6livanieVoprosov.png"
-        alt="24/7"
-        title="24/7"
-        width="320px"
-        height="400px"
-      />
-      <h3 class="catalog">
+      <h3 class="catalog bezobt">
         А&nbsp;так&nbsp;же могу управлять различными грузоподьемными средствами.
       </h3>
+      <div class="imgBlock">
+        <img
+          src="../image/takelajnieRaboti.JPG"
+          alt="kran"
+          width="320px"
+          height="400px"
+          title="здесь могла быть чья то мамка"
+        />
+      </div>
       <div>
         Вы&nbsp;видете тут совместную работу двумя кранами (четвертаки),<br />
         а&nbsp;это значит я&nbsp;смогу поднять даже сферическую мамашу
         в&nbsp;ваккуме! Если будет точка опоры.
       </div>
-      <img
-        src="../image/takelajnieRaboti.JPG"
-        alt="kran"
-        width="320px"
-        height="400px"
-        title="здесь могла быть чья то мамка"
-      />
       <br />
-      <div>И&nbsp;многое многое другое.</div>
-      <a href="travelblog.html">Пляшем далее</a>
+      <form action="#">
+        <input type="button" value="buy" />
+      </form>
     </main>
   </body>
   <hr />
@@ -121,5 +135,7 @@
   </address>
   <a href="#heading1"><div class="center">наверх</div> </a>
   <a href="../index.html">Обратно на&nbsp;главную.</a>
-  <footer role="contentinfo">&copy;&nbsp;2020&nbsp;B. Resler</footer>
+  <footer role="contentinfo">
+    <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
+  </footer>
 </html>
