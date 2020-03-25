@@ -10,6 +10,12 @@
       It's all about B.Resler!
     </title>
     <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
       rel="shortcut icon"
       href="../image/rick-128x128.png"
       type="image/x-icon"
@@ -40,90 +46,137 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <header>
-      <h3 id="heading1">What about B.&nbsp;Resler</h3>
-      <div class="logo">вот такое лого</div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">На&nbsp;главную</a></li>
-          <li>
-            <a href="../catalog.html"> Каталог о&nbsp;Борисе</a>
-            <ul>
-              <li>Борис инженер</li>
-              <li><a href="KVN.html">Борис КВН</a></li>
-              <li>
-                <a href="travelblog.html">Борис travel blog</a>
+    <div class="container">
+      <header>
+        <h1 id="heading1">Do&nbsp;you know about B.&nbsp;Resler</h1>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+          <a class="navbar-brand" href="https://www.instagram.com/b.resler/"
+            >B.Resler</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Главная </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../catalog.html">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Ingener.html"
+                  >Инженер<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="KVN.html">КВН</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="travelblog.html">Путешествия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../guestbook.html">Гостевая</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
               </li>
             </ul>
-          </li>
-          <li><a href="../guestbook.html">Гостевая Бориса</a></li>
-          <li><a href="#contact">Контакты Бориса</a></li>
-        </ul>
-      </nav>
-    </header>
-    <hr />
-    <main clas="OpisanieTovara">
-      <div class="imgBlock">
-        <img src="../image/borisMain400.jpg" src="B.Resler" title="B.Resler" />
-      </div>
-      <p class="Osnova">
-        Итак дорогой друг. Ты&nbsp;все-таки решил узнать побольше о&nbsp;данном
-        товаре.
+          </div>
+        </nav>
+      </header>
+      <hr />
+      <main>
+        <div class="imgBlock">
+          <img
+            src="../image/borisMain400.jpg"
+            alt="B.Resler"
+            title="B.Resler"
+          />
+        </div>
+        <p class="Osnova">
+          Итак дорогой друг. Ты&nbsp;все-таки решил узнать побольше
+          о&nbsp;данном товаре.
+          <br />
+          На&nbsp;данной странице, ты&nbsp;увидишь примеры что данный товар
+          подойдет, как инженерный работник.
+        </p>
+        <h3 class="catalog bezobt">
+          Например я&nbsp;могу быть начальником вашего цеха.<br />
+        </h3>
+        <div class="imgBlock">
+          <img
+            src="../image/bigboss.JPG"
+            alt="Boss for you manufactory"
+            title="Вашему цеху начальник не нужен?"
+            width="400"
+            height="400"
+          />
+        </div>
+        <div>
+          Только посмотрите как я&nbsp;буду красиво смотреться на&nbsp;ежегодных
+          календарях.
+        </div>
+        <h3 class="catalog bezobt">
+          Я&nbsp;буду обкашливать ваши вопросики 24/7.
+        </h3>
+        <div class="imgBlock">
+          <img
+            src="../image/obka6livanieVoprosov-400.jpg"
+            alt="24/7"
+            title="24/7"
+            width="320"
+            height="400"
+          />
+        </div>
+        <div>В&nbsp;любом месте и&nbsp;в&nbsp;любом состоянии.</div>
+        <h3 class="catalog bezobt">
+          А&nbsp;так&nbsp;же могу управлять различными грузоподьемными
+          средствами.
+        </h3>
+        <div class="imgBlock">
+          <img
+            src="../image/takelajnieRaboti-400.jpg"
+            alt="kran"
+            width="320"
+            height="400"
+            title="здесь могла быть чья то мамка"
+          />
+        </div>
+        <div>
+          Вы&nbsp;видете тут совместную работу двумя кранами (четвертаки),<br />
+          а&nbsp;это значит я&nbsp;смогу поднять даже сферическую мамашу
+          в&nbsp;ваккуме! Если будет точка опоры.
+        </div>
         <br />
-        На&nbsp;данной странице, ты&nbsp;увидишь примеры что данный товар
-        подойдет, как инженерный работник.
-      </p>
-      <h3 class="catalog bezobt">
-        Например я&nbsp;могу быть начальником вашего цеха.<br />
-      </h3>
-      <div class="imgBlock">
-        <img
-          src="../image/bigboss.JPG"
-          alt="Boss for you manufactory"
-          title="Вашему цеху начальник не нужен?"
-          width="400px"
-          height="400px"
-        />
-      </div>
-      <div>
-        Только посмотрите как я&nbsp;буду красиво смотреться на&nbsp;ежегодных
-        календарях.
-      </div>
-      <h3 class="catalog bezobt">
-        Я&nbsp;буду обкашливать ваши вопросики 24/7.
-      </h3>
-      <div class="imgBlock">
-        <img
-          src="../image/obka6livanieVoprosov.png"
-          alt="24/7"
-          title="24/7"
-          width="320px"
-          height="400px"
-        />
-      </div>
-      <div>В&nbsp;любом месте и&nbsp;в&nbsp;любом состоянии.</div>
-      <h3 class="catalog bezobt">
-        А&nbsp;так&nbsp;же могу управлять различными грузоподьемными средствами.
-      </h3>
-      <div class="imgBlock">
-        <img
-          src="../image/takelajnieRaboti.JPG"
-          alt="kran"
-          width="320px"
-          height="400px"
-          title="здесь могла быть чья то мамка"
-        />
-      </div>
-      <div>
-        Вы&nbsp;видете тут совместную работу двумя кранами (четвертаки),<br />
-        а&nbsp;это значит я&nbsp;смогу поднять даже сферическую мамашу
-        в&nbsp;ваккуме! Если будет точка опоры.
-      </div>
-      <br />
-      <form action="#">
-        <input type="button" value="buy" />
-      </form>
-    </main>
+        <form action="#">
+          <input type="button" value="buy" />
+        </form>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
   <hr />
   <address>
@@ -134,8 +187,7 @@
     </ul>
   </address>
   <a href="#heading1"><div class="center">наверх</div> </a>
-  <a href="../index.html">Обратно на&nbsp;главную.</a>
-  <footer role="contentinfo">
+  <footer>
     <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
   </footer>
 </html>

@@ -1,17 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
   background-color: aquamarine;
   line-height: 150%;
+  height: 100%;
 }
-main {
-  font-family: Rubik;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #heading1 {
   text-align: center;
   font-family: Raleway;
-  background-color: lawngreen;
-  margin: -5px -5% 0px -5px;
-  padding: 10px 0px 0px 0px;
+  background-color: rgba(127, 238, 16, 0.911);
+  margin: -5px -1% 5px -1%;
+  padding: 10px 1% 0px 5px;
   font-size: 2em;
+  font-weight: 400;
+}
+.navbar-color {
+  font-family: Raleway;
+  background-color: rgba(127, 238, 16, 0.911);
+  margin: -5px -1% 0px -1%;
+  padding: 10px 1% 0px 5px;
   font-weight: 400;
   border-radius: 0% 0% 15% 15%;
 }
@@ -25,6 +38,7 @@ main {
   padding: 0 20px 20px 20px;
   border: 1.5px solid rgba(20, 18, 18, 0.801);
   overflow: hidden;
+  font-family: Rubik;
 }
 .Spisok {
   margin: 0px 0px 0px 20px;
@@ -40,20 +54,19 @@ nav {
 }
 nav a {
   color: blue;
+  padding-left: 15px;
+  padding-right: 10px;
 }
-
 nav ul {
   list-style-type: none;
   text-align: right;
 }
-
 .OpisanieTovara {
   font-weight: 400;
   text-align: left;
   line-height: 24px;
   font-size: 16px;
 }
-
 main img {
   display: block;
   margin: auto;
@@ -65,19 +78,24 @@ main img:hover {
 }
 input[type="text"] {
   height: 2em;
-  width: auto;
-
-  margin: 0px 0px 0px 0px;
+  width: 150px;
+  margin: 0 auto;
+  border: 1px solid aqua;
+  border-radius: 50rem;
 }
 input[type="password"] {
   height: 2em;
-
-  margin: 5px 0px 0px 17px;
+  margin: 0 auto;
+  width: 150px;
+  border: 1px solid aqua;
+  border-radius: 50rem;
 }
 input[type="email"] {
   height: 2em;
-
-  margin: 5px 0px 0px 25px;
+  width: 150px;
+  margin: 0 auto;
+  border: 1px solid aqua;
+  border-radius: 50rem;
 }
 input[type="email"]:focus {
   color: forestgreen;
@@ -93,13 +111,15 @@ input[type="email"]:focus {
   font-size: 1.25em;
   font-family: Lemonada;
 }
+/*
 nav a:hover {
   color: rebeccapurple;
 }
 nav a:active {
   color: green;
 }
-nav a:hover:after {
+*/
+/*nav a:hover:after {
   content: ">";
   color: rebeccapurple;
 }
@@ -107,16 +127,17 @@ nav a:hover::before {
   content: "<";
   color: rebeccapurple;
 }
+*/
 input[type="text"] {
   text-transform: capitalize;
 }
 p.textarea:first-letter {
   text-transform: uppercase;
 }
-
 table {
   border: 2px solid black;
   border-collapse: collapse;
+  clear: both;
 }
 td,
 th {
@@ -148,9 +169,11 @@ nav li:hover ul {
   background-color: navajowhite;
   color: dimgrey;
   float: left;
-  position: absolute;
+  margin: 12px 35px;
+  /*position: absolute;
   left: 50px;
   z-index: -1;
+  */
 }
 header {
   display: block;
@@ -168,6 +191,7 @@ footer {
   position: absolute;
   right: 10%;
   top: 10%;
+  color: aliceblue;
 }
 input[value="buy"]:hover {
   background-color: tomato;
@@ -178,7 +202,14 @@ input[value="buy"]:active {
 .imgBlock {
   float: left;
   margin-right: 20px;
+  margin-top: 5px;
 }
 .bezobt {
   clear: both;
+}
+div.center {
+  text-align: center;
+}
+address {
+  padding-left: 3%;
 }

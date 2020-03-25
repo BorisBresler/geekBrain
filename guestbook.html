@@ -10,6 +10,12 @@
       Guest book B.Resler
     </title>
     <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
       rel="shortcut icon"
       href="../image/rick-128x128.png"
       type="image/x-icon"
@@ -40,64 +46,128 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <header>
-      <h1 id="heading1">Добро пожаловать в&nbsp;гостевую к&nbsp;Борису</h1>
-      <div class="logo">вот такое лого</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">На&nbsp;главную</a></li>
-          <li>
-            <a href="catalog.html"> Каталог о&nbsp;Борисе</a>
-            <ul>
-              <li><a href="catalog/Ingener.html">Борис инженер</a></li>
-              <li><a href="catalog/KVN.html">Борис КВН</a></li>
-              <li>
-                <a href="catalog/travelblog.html">Борис travel blog</a>
+    <div class="container">
+      <header>
+        <h1 id="heading1">Добро пожаловать в гости к Борису</h1>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+          <a class="navbar-brand" href="https://www.instagram.com/b.resler/"
+            >B.Resler</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/Ingener.html">Инженер</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/KVN.html">КВН</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/travelblog.html"
+                  >Путешествия</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guestbook.html"
+                  >Гостевая<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
               </li>
             </ul>
-          </li>
-          <li>Гостевая Бориса</li>
-          <li><a href="#contact">Контакты Бориса</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div>
-        <form action="#">
-          <div class="textarea">
-            Ваше имя <input type="text" placeholder="Ваше имя" autofocus />
           </div>
-          Пароль <input type="password" placeholder="Пароль" /> <br />
-          E-mail <input type="email" placeholder="E-mail" /> <br />
-          <span>Что вы&nbsp;хотите написать: </span> <br />
-          что-то приятное <input type="radio" name="guest" checked /> обосрать
-          обидчика
-          <input type="radio" name="guest" />
+        </nav>
+      </header>
+      <main>
+        <div>
           <br />
-          <p class="textarea">
-            <textarea rows="5" cols="30" placeholder="Пишем здесь"> </textarea>
-          </p>
-          <br />
-          <input type="submit" value="Отправить" />
-          <input type="reset" value="Сброс" />
-        </form>
-      </div>
-      <div>
-        Нужно было встроить карту и&nbsp;вот где я&nbsp;нахожусь например
-      </div>
-    </main>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.718401233472!2d37.36781841543177!3d55.815488994623585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54647959e5801%3A0xf2d9fd64fef665f1!2z0JrRgNCw0YHQvdC-0LPQvtGA0YHQutC40Lkg0LHRg9C7LiwgMTMsINCa0YDQsNGB0L3QvtCz0L7RgNGB0LosINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MzQwMQ!5e0!3m2!1sru!2sru!4v1584949908177!5m2!1sru!2sru"
-      width="100%"
-      height="374"
-      frameborder="0"
-      style="border:0;"
-      allowfullscreen=""
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
+          <form action="#">
+            <div class="row">
+              <div class="col-">
+                <div class="textarea">
+                  Ваше имя
+                  <input type="text" placeholder="Ваше имя" autofocus />
+                </div>
+              </div>
+              <div class="col-">
+                &#8194;Пароль <input type="password" placeholder="Пароль" />
+                <br />
+              </div>
+              <div class="col-">
+                &#8194;E-mail
+                <input type="email" placeholder="E-mail" />
+              </div>
+              <br />
+            </div>
+            <div class="row">
+              <div class="col-">
+                <span>Что вы&nbsp;хотите написать:&#8195; </span>
+              </div>
+              <div class="col-">
+                что-то приятное <input type="radio" name="guest" checked />
+              </div>
+              <div class="col-">
+                обосрать обидчика <input type="radio" name="guest" />
+              </div>
+            </div>
+            <p class="textarea">
+              <textarea rows="5" cols="30" placeholder="Пишем здесь">
+              </textarea>
+            </p>
+            <br />
+            <input type="submit" value="Отправить" />
+            <input type="reset" value="Сброс" />
+          </form>
+        </div>
+        <div>
+          Нужно было встроить карту и&nbsp;вот где я&nbsp;нахожусь например
+        </div>
+      </main>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.718401233472!2d37.36781841543177!3d55.815488994623585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54647959e5801%3A0xf2d9fd64fef665f1!2z0JrRgNCw0YHQvdC-0LPQvtGA0YHQutC40Lkg0LHRg9C7LiwgMTMsINCa0YDQsNGB0L3QvtCz0L7RgNGB0LosINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MzQwMQ!5e0!3m2!1sru!2sru!4v1584949908177!5m2!1sru!2sru"
+        width="90%"
+        height="374"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <hr />
   </body>
-  <hr />
   <address>
     <ul id="contact">
       <li><a href="https://www.instagram.com/b.resler/">Instagram</a></li>
@@ -106,8 +176,7 @@
     </ul>
   </address>
   <a href="#heading1"><div class="center">наверх</div> </a>
-  <a href="index.html">Обратно на&nbsp;главную.</a>
-  <footer role="contentinfo">
+  <footer>
     <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
   </footer>
 </html>

@@ -10,6 +10,12 @@
       It's all about B.Resler!
     </title>
     <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
       rel="shortcut icon"
       href="image/rick-128x128.png"
       type="image/x-icon"
@@ -40,122 +46,265 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <header>
-      <h1 id="heading1">Здесь располагается каталог о&nbsp;Борисе</h1>
-      <div class="logo">вот такое лого</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">На&nbsp;главную</a></li>
-          <li>
-            Каталог о Борисе
-            <ul>
-              <li><a href="catalog/Ingener.html">Борис инженер</a></li>
-              <li><a href="catalog/KVN.html">Борис КВН</a></li>
-              <li>
-                <a href="catalog/travelblog.html">Борис travel blog</a>
+    <div class="container">
+      <header>
+        <h1 id="heading1">Do&nbsp;you know about B.&nbsp;Resler</h1>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+          <a class="navbar-brand" href="https://www.instagram.com/b.resler/"
+            >B.Resler</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html"
+                  >Каталог<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/Ingener.html">Инженер</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/KVN.html">КВН</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/travelblog.html"
+                  >Путешествия</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guestbook.html">Гостевая</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
               </li>
             </ul>
-          </li>
-          <li><a href="guestbook.html">Гостевая Бориса</a></li>
-          <li><a href="#contact">Контакты Бориса</a></li>
-        </ul>
-      </nav>
-      <hr />
-    </header>
-    <main>
-      <div class="product">
-        <h3 class="catalog">Борис инженер</h3>
-        <img
-          src="image/bigboss.JPG"
-          alt="Boss for you manufactory"
-          title="Вашему цеху начальник не нужен?"
-          width="180px"
-          height="200px"
-        />
-        <div class="catalog">
-          <form action="#">
-            <input type="button" value="buy" />
-          </form>
-          <a href="catalog/Ingener.html">Подробнее</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="index.html">
+                <img
+                  src="image/borismane2-400.jpg"
+                  class="d-block w-100"
+                  alt="B.Resler"
+                  width="400"
+                  height="500"
+                />
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hello, my Freind!</h5>
+                <p>
+                  "Это как ты видишь я улыбаюсь именно тебе!"
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="catalog/Ingener.html">
+                <img
+                  src="image/bigboss.JPG"
+                  class="d-block w-100"
+                  alt="Big boss"
+                  width="400"
+                  height="600"
+                />
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Big Boss</h5>
+                <p>Для больших проблем нужны большие решения</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="catalog/KVN.html">
+                <img
+                  src="image/kapitan.JPG"
+                  class="d-block w-100"
+                  alt="Kapitan"
+                  width="400"
+                  height="600"
+                />
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>O CAPTAIN! MY CAPTAIN!...</h5>
+                <p>
+                  Немного будущего юморного контента.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="catalog/travelblog.html">
+                <img
+                  src="image/travel-400.jpg"
+                  class="d-block w-100"
+                  alt="travelblog"
+                  width="400"
+                  height="600"
+                />
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Супонев Team!</h5>
+                <p>Когда ты смелый, ловкий и умелый, и джунгли тебя зовут!</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </div>
-      <div class="product">
-        <h3 class="catalog">Борис весельчак</h3>
-        <img
-          src="image/kapitan.JPG"
-          alt="Capitan B.Resler"
-          title="Capitan B.Resler"
-          width="180px"
-          height="200px"
-        />
-        <div class="catalog">
-          <form action="#">
-            <input type="button" value="buy" />
-          </form>
-          <a href="catalog/KVN.html">Подробнее</a>
+        <div class="product">
+          <h3 class="catalog">Борис инженер</h3>
+          <img
+            src="image/bigboss.JPG"
+            alt="Boss for you manufactory"
+            title="Вашему цеху начальник не нужен?"
+            width="180"
+            height="200"
+          />
+          <div class="catalog">
+            <form action="#">
+              <input type="button" value="buy" />
+            </form>
+            <a href="catalog/Ingener.html">Подробнее</a>
+          </div>
         </div>
-      </div>
-      <div class="product">
-        <h3 class="catalog">Борис путешественник</h3>
-        <img
-          src="image/travel.JPG"
-          alt="travel Boris"
-          title="Travel Boris"
-          width="150px"
-          height="200px"
-        />
-        <div class="catalog">
-          <form action="#">
-            <input type="button" value="buy" />
-          </form>
-          <a href="catalog/travelblog.html">Подробнее</a>
+        <div class="product">
+          <h3 class="catalog">Борис весельчак</h3>
+          <img
+            src="image/kapitan.JPG"
+            alt="Capitan B.Resler"
+            title="Capitan B.Resler"
+            width="180"
+            height="200"
+          />
+          <div class="catalog">
+            <form action="#">
+              <input type="button" value="buy" />
+            </form>
+            <a href="catalog/KVN.html">Подробнее</a>
+          </div>
         </div>
-      </div>
-      <br />
-      <table>
-        <caption>
-          <thead>
+        <div class="product">
+          <h3 class="catalog">Борис Супонев</h3>
+          <img
+            src="image/travel-400.jpg"
+            alt="travel Boris"
+            title="Travel Boris"
+            width="150"
+            height="200"
+          />
+          <div class="catalog">
+            <form action="#">
+              <input type="button" value="buy" />
+            </form>
+            <a href="catalog/travelblog.html">Подробнее</a>
+          </div>
+        </div>
+        <table>
+          <caption>
+            <thead>
+              <tr>
+                <th rowspan="2">Здесь сказано что внизу у&nbsp;нас товары</th>
+                <th rowspan="2">Здесь например еденица измерения</th>
+                <th colspan="3">Заголовок о&nbsp;чем-то общем</th>
+              </tr>
+              <tr>
+                <td>цена в&nbsp;руб</td>
+                <td>цена в&nbsp;у.&nbsp;е.</td>
+                <td>цена по&nbsp;бартеру</td>
+              </tr>
+            </thead>
+          </caption>
+          <tbody>
             <tr>
-              <th rowspan="2">Здесь сказано что внизу у&nbsp;нас товары</th>
-              <th rowspan="2">Здесь например еденица измерения</th>
-              <th colspan="3">Заголовок о&nbsp;чем-то общем</th>
+              <th rowspan="2">
+                товар с&nbsp;разными единицами измерения например
+              </th>
+              <td>кг</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
             </tr>
             <tr>
-              <td>цена в&nbsp;руб</td>
-              <td>цена в&nbsp;у.&nbsp;е.</td>
-              <td>цена по&nbsp;бартеру</td>
+              <td>шт</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
             </tr>
-          </thead>
-        </caption>
-        <tbody>
-          <tr>
-            <th rowspan="2">
-              товар с&nbsp;разными единицами измерения например
-            </th>
-            <td>кг</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>шт</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th colspan="2">Итого</th>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-          </tr>
-        </tfoot>
-      </table>
-    </main>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="2">Итого</th>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <hr />
   </body>
-  <hr />
   <address>
     <ul id="contact">
       <li><a href="https://www.instagram.com/b.resler/">Instagram</a></li>
@@ -164,8 +313,7 @@
     </ul>
   </address>
   <a href="#heading1"><div class="center">наверх</div> </a>
-  <a href="index.html">Обратно на&nbsp;главную.</a>
-  <footer role="contentinfo">
+  <footer>
     <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
   </footer>
 </html>

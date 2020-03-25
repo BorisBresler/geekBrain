@@ -10,6 +10,12 @@
       It's all about B.Resler!
     </title>
     <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
       rel="shortcut icon"
       href="image/rick-128x128.png"
       type="image/x-icon"
@@ -40,60 +46,103 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <header>
-      <h1 id="heading1">Do&nbsp;you know about B.&nbsp;Resler</h1>
-      <div class="logo">вот такое лого</div>
-      <nav>
-        <ul>
-          <li>Главная</li>
-          <li>
-            <a href="catalog.html"> Каталог о&nbsp;Борисе</a>
-            <ul>
-              <li><a href="catalog/Ingener.html">Борис инженер</a></li>
-              <li><a href="catalog/KVN.html">Борис КВН</a></li>
-              <li>
-                <a href="catalog/travelblog.html">Борис travel blog</a>
+    <div class="container">
+      <header>
+        <h1 id="heading1">Do&nbsp;you know about B.&nbsp;Resler</h1>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+          <a class="navbar-brand" href="https://www.instagram.com/b.resler/"
+            >B.Resler</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Главная <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/Ingener.html">Инженер</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/KVN.html">КВН</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/travelblog.html"
+                  >Путешествия</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guestbook.html">Гостевая</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
               </li>
             </ul>
-          </li>
-          <li><a href="guestbook.html">Гостевая Бориса</a></li>
-          <li><a href="#contact">Контакты Бориса</a></li>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <br />
+        <img src="image/borismane2-400.jpg" alt="B.Resler" title="B.Resler" />
+        <h3>
+          Инженер, блоггер, комик, путешественник, молодой и&nbsp;находчивый!
+        </h3>
+        <p class="shortDescription">
+          Здесь знаете-ли информация о&nbsp;<b>Борисе:</b>
+          <br /><br />Я&nbsp;родился в&nbsp;90ые, в центре города Уфа.<br />Затем
+          была школа и&nbsp;прочая ботва. <br />
+          Потом начался КВН и&nbsp;институт.<br />
+          Ночная жизнь и&nbsp;домашний уют.
+        </p>
+        <h3>Тот самый Борис, в&nbsp;которого <i>*** попадешь!</i></h3>
+        <p class="xarakteristika">
+          Здесь находятся технические характеристика на&nbsp;данный товар
+        </p>
+        <ul class="Spisok">
+          <li>Почти 30&nbsp;лет.</li>
+          <li>Одно среднее и&nbsp;одно высшее образование.</li>
+          <li>Одна жена.</li>
+          <li>Одна жизнь.</li>
+          <li>Одни правила.</li>
         </ul>
-        <hr />
-      </nav>
-    </header>
-    <main>
-      <br />
-      <img src="image/borismane2-400.jpg" alt="B.Resler" title="B.Resler" />
-      <h3>
-        Инженер, блоггер, комик, путешественник, молодой и&nbsp;находчивый!
-      </h3>
-      <p class="shortDescription">
-        Здесь знаете-ли информация о&nbsp;<b>Борисе:</b>
-        <br /><br />Я&nbsp;родился в&nbsp;90ые, в центре города Уфа.<br />Затем
-        была школа и&nbsp;прочая ботва. <br />
-        Потом начался КВН и&nbsp;институт.<br />
-        Ночная жизнь и&nbsp;домашний уют.
-      </p>
-      <h3>Тот самый Борис, в&nbsp;которого <i>*** попадешь!</i></h3>
-      <p class="xarakteristika">
-        Здесь находятся технические характеристика на&nbsp;данный товар
-      </p>
-      <ul class="Spisok">
-        <li>Почти 30&nbsp;лет.</li>
-        <li>Одно среднее и&nbsp;одно высшее образование.</li>
-        <li>Одна жена.</li>
-        <li>Одна жизнь.</li>
-        <li>Одни правила.</li>
-      </ul>
-      <p>
-        Хотите знать больше? Жмите
-        <a href="catalog/Ingener.html" title="Инженер">колокольчик</a>,
-        <a href="catalog/KVN.html" title="КВН"> взаимные лайки </a> и
-        <a href="catalog/travelblog.html" title="travel blog"> подписка.</a>
-      </p>
-    </main>
-    <hr />
+        <p>
+          Хотите знать больше? Жмите
+          <a href="catalog/Ingener.html" title="Инженер">колокольчик</a>,
+          <a href="catalog/KVN.html" title="КВН"> взаимные лайки </a> и
+          <a href="catalog/travelblog.html" title="travel blog"> подписка.</a>
+        </p>
+      </main>
+      <hr />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
   <address>
     <ul id="contact">
@@ -103,7 +152,7 @@
     </ul>
   </address>
   <a href="#heading1"><div class="center">наверх</div> </a>
-  <footer role="contentinfo">
+  <footer>
     <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
   </footer>
 </html>
