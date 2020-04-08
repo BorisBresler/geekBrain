@@ -21,6 +21,7 @@
       type="image/x-icon"
     />
     <link href="styleCSS/style.css" rel="stylesheet" type="text/css" />
+    <link href="styleCSS/styleMedia.css" rel="stylesheet" type="text/css" />
     <link
       href="http://fonts.googleapis.com/css?family=Kurale"
       rel="stylesheet"
@@ -46,13 +47,13 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <div class="container">
+    <div class="container1">
       <header>
-        <h1 id="heading1">Do&nbsp;you know about B.&nbsp;Resler</h1>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-color">
-          <a class="navbar-brand" href="https://www.instagram.com/b.resler/"
-            >B.Resler</a
-          >
+        <h1 id="heading1">Do&nbsp;you know about B.&nbsp;Resler?</h1>
+        <nav
+          class="navbar navbar-expand-lg navbar-light navbar-color navbarBoris"
+        >
+          <a class="navbar-brand" href="#">B.Resler</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -97,12 +98,27 @@
       </header>
       <main>
         <br />
-        <img src="image/borismane2-400.jpg" alt="B.Resler" title="B.Resler" />
-        <h3>
+        <picture class="mainfoto">
+          <source
+            media="(max-width: 480px)"
+            srcset="image/borismane2-300.jpg"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="image/borismane2-400.jpg"
+          />
+          <source media="(min-width: 1024px)" srcset="image/borismane2.jpg" />
+          <img
+            srcset="image/borismane2-400.jpg"
+            alt="B.Resler"
+            title="B.Resler"
+          />
+        </picture>
+        <h3 class="heading3">
           Инженер, блоггер, комик, путешественник, молодой и&nbsp;находчивый!
         </h3>
-        <p class="shortDescription">
-          Здесь знаете-ли информация о&nbsp;<b>Борисе:</b>
+        <p class="mainDescription">
+          Здесь, знаете ли, информация о&nbsp;<b>Борисе:</b>
           <br /><br />Я&nbsp;родился в&nbsp;90ые, в центре города Уфа.<br />Затем
           была школа и&nbsp;прочая ботва. <br />
           Потом начался КВН и&nbsp;институт.<br />
@@ -110,7 +126,7 @@
         </p>
         <h3>Тот самый Борис, в&nbsp;которого <i>*** попадешь!</i></h3>
         <p class="xarakteristika">
-          Здесь находятся технические характеристика на&nbsp;данный товар
+          Здесь находятся технические характеристики на&nbsp;данный товар:
         </p>
         <ul class="Spisok">
           <li>Почти 30&nbsp;лет.</li>
@@ -119,15 +135,33 @@
           <li>Одна жизнь.</li>
           <li>Одни правила.</li>
         </ul>
-        <p>
+        <p class="goodLink">
           Хотите знать больше? Жмите
           <a href="catalog/Ingener.html" title="Инженер">колокольчик</a>,
           <a href="catalog/KVN.html" title="КВН"> взаимные лайки </a> и
           <a href="catalog/travelblog.html" title="travel blog"> подписка.</a>
         </p>
+        <button class="button">Push the button</button>
       </main>
       <hr />
+      <div class="buttonUP goodLink">
+        <a href="#heading1">наверх </a>
+      </div>
+      <address class="goodLink">
+        <ul id="contact">
+          <li><a href="https://www.instagram.com/b.resler/">Instagram</a></li>
+          <li>Tel:+7-922-796-55-35</li>
+          <li>
+            Email: <a href="mailto:9bres0@gmail.com">9bres0@gmail. com</a>
+          </li>
+        </ul>
+      </address>
+      <footer>
+        <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
+      </footer>
     </div>
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -144,15 +178,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  <address>
-    <ul id="contact">
-      <li><a href="https://www.instagram.com/b.resler/">Instagram</a></li>
-      <li>Tel:+7-922-796-55-35</li>
-      <li>Email: <a href="mailto:9bres0@gmail.com">9bres0@gmail. com</a></li>
-    </ul>
-  </address>
-  <a href="#heading1"><div class="center">наверх</div> </a>
-  <footer>
-    <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
-  </footer>
 </html>

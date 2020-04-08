@@ -1,0 +1,48 @@
+@media (max-width: 424px) {
+  main {
+    width: 95%;
+    padding: 0 5px 5px 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+  div.buttonUP {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 500px) and (min-width: 425px) {
+  main {
+    width: 90%;
+    padding: 0 5px 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  div.buttonUP {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 700px) and (min-width: 501px) {
+  main {
+    width: 90%;
+  }
+  .heading3 {
+    font-size: 1.2em;
+  }
+  div.buttonUP {
+    margin-right: 5%;
+  }
+}
+@media (min-width: 701px) {
+  main {
+    width: 80%;
+  }
+  .heading3 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  header,
+  footer {
+    margin-left: -1.75%;
+    margin-right: -1.75%;
+  }
+}
