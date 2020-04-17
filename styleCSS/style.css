@@ -5,17 +5,26 @@
 html {
   background-color: aquamarine;
   line-height: 150%;
-  height: 100%;
 }
 body {
   background-image: url(/geekbrain/image/background/squreel.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 header {
   display: block;
-  height: 100px;
+  min-height: 100px;
   position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(150, 255, 104, 0.774),
+    rgba(195, 247, 8, 1)
+  );
+  border-radius: 0% 0% 15% 15%;
 }
 nav a {
   padding-left: 1%;
@@ -30,7 +39,7 @@ main {
   padding: 0 20px 20px 20px;
   border: 1.5px solid rgba(20, 18, 18, 0.801);
   overflow: hidden;
-  font-family: Rubik;
+  font-family: Rubik, Arial, sans-serif;
 }
 main img {
   display: block;
@@ -44,8 +53,13 @@ address {
 }
 footer {
   display: block;
-  height: 50px;
-  background-color: dimgrey;
+  min-height: 50px;
+  background-image: linear-gradient(
+    to top,
+    rgba(107, 89, 89, 1),
+    rgba(202, 142, 142, 0.774)
+  );
+
   text-align: end;
   position: relative;
 }
@@ -53,37 +67,147 @@ hr {
   margin: 0% -1% -1% -1%;
   padding: 0px;
 }
-.container1 {
-  max-width: 1200px;
+div.container-All {
+  max-width: 2500px;
   margin: 0 auto;
 }
 .navbarBoris {
-  font-family: Kurale !important;
+  font-family: Kurale, Times, serif !important;
   font-size: 1.1em;
   z-index: 1;
 }
 .navbar-color {
-  font-family: Rubik;
-  background-color: rgba(155, 238, 72, 0.781);
-  margin: -5px 0% 0px 0%;
-  padding: 10px 1% 0px 5px;
+  font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
-  border-radius: 0% 0% 15% 15%;
+  margin: -5px 0% 0px 0%;
+  padding: 10px 1% 0px 10px;
 }
-#heading1 {
+#heading-1 {
   text-align: center;
-  font-family: Rubik;
-  background-color: rgba(127, 238, 16, 0.911);
-  margin: -5px 0% 5px 0%;
-  padding: 10px 1% 0px 5px;
+  font-family: Rubik, Arial, sans-serif;
   font-size: 2em;
   font-weight: 400;
+
+  margin: -5px 0% 5px 0%;
+  padding: 10px 1% 0px 5px;
 }
-.Spisok {
+.main-index-spisok {
+  display: flex;
+  flex-direction: column;
   margin: 0px 0px 0px 20px;
-  list-style-image: url(/geekbrain/image/stormtrooper.svg);
-  list-style-position: inside;
+  padding-left: 25px;
+  list-style-type: none;
+  position: relative;
 }
+.main-index-spisok li {
+  padding-bottom: 37px;
+  align-items: center;
+}
+.main-index-spisok li::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  width: 65px;
+  height: 65px;
+  background-image: url(/geekbrain/image/stormtrooper.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+ul.contact li {
+  padding-left: 20px;
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.instagramm-icon::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -52px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/geekbrain/image/icon/instagram.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+}
+
+.phone-icon-position {
+  padding-bottom: 12px !important;
+}
+.phone-icon::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -32px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/geekbrain/image/icon/whatsap.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+}
+.mail-icon-position {
+  padding-bottom: 17px !important;
+}
+.mail-icon::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -52px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/geekbrain/image/icon/mail.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+}
+
+.facebook-icon::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -52px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/geekbrain/image/icon/facebook.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+}
+
+.github-icon::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -52px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/geekbrain/image/icon/github.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+}
+
+.tripadvisor-icon::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -52px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/geekbrain/image/icon/tripadvisor.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+}
+ul.contact span:hover::before,
+ul.contact span:focus::before,
+ul.contact span:active::before {
+  opacity: 1;
+  transition: 0.5s;
+}
+
 ul.Spisok li {
   text-align: left;
 }
@@ -91,7 +215,6 @@ ul.Spisok li {
 .OpisanieTovara {
   font-weight: 400;
   text-align: left;
-  line-height: 24px;
   font-size: 16px;
 }
 
@@ -99,23 +222,23 @@ main img:hover {
   outline: 0px;
 }
 input[type="text"] {
+  text-transform: capitalize;
   height: 2em;
-  width: 150px;
+  min-width: 150px;
   padding-left: 38px;
   border: 3px solid rgb(255, 255, 0);
   border-radius: 50rem;
-  text-transform: capitalize;
 }
 input[type="password"] {
   height: 2em;
   padding-left: 45px;
-  width: 150px;
+  min-width: 150px;
   border: 3px solid rgb(255, 255, 0);
   border-radius: 50rem;
 }
 input[type="email"] {
   height: 2em;
-  width: 150px;
+  min-width: 150px;
   padding-left: 47px;
   margin: 0 auto;
   border: 3px solid rgb(255, 255, 0);
@@ -139,9 +262,10 @@ input[type="email"]:focus {
 nav a:active {
   color: green;
 }
-*/ .textarea {
+.textarea {
   text-transform: uppercase;
   border: 3px solid rgba(127, 238, 16, 0.911);
+  border-radius: 25% / 50%;
   overflow: hidden;
 }
 table {
@@ -151,28 +275,15 @@ table {
 }
 td,
 th {
-  width: 150px;
-  height: 100px;
+  min-width: 150px;
+  min-height: 100px;
   border: 2px solid black;
 }
 thead th {
-  height: 200px;
+  min-height: 200px;
 }
 .product {
-  float: left;
   margin: 20px;
-}
-.logo {
-  width: 100px;
-  height: 50px;
-  background-color: navajowhite;
-  color: dimgrey;
-  float: left;
-  margin: 12px 35px;
-  /*position: absolute;
-  left: 50px;
-  z-index: -1;
-  */
 }
 
 .footer {
@@ -197,26 +308,54 @@ input[value="buy"]:active {
 }
 div.buttonUP {
   text-align: center;
+  color: darkorange;
   border: 1px solid rgba(155, 238, 72, 0.781);
   border-radius: 25%;
-  width: 75px;
-  float: right;
-  margin-right: 50%;
-  margin-top: 2%;
   background-color: gainsboro;
-  color: darkorange;
+  width: 75px;
+  margin-left: 40%;
+  margin-bottom: 10px;
+  margin-top: -20px;
+  padding-right: 15px;
+  position: relative;
 }
-address {
-  padding-left: 7%;
+div.buttonUp a {
+  padding-left: 3px;
 }
-.kartaKrasnogorsk {
-  width: 90%;
-  height: 374px;
-  border: 0px;
+div.buttonUP::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  border: 7px solid transparent;
+  opacity: 0;
+  border-bottom: 10px solid green;
+}
+@keyframes buttonUp {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div.buttonUP:hover::after {
+  animation: 1s infinite buttonUp;
+  animation-direction: alternate;
 }
 
-.button {
-  text-align: center;
+.kartaKrasnogorsk {
+  width: 90%;
+  min-height: 374px;
+  border: 0px;
 }
 
 .goodLink a:hover {
@@ -235,7 +374,7 @@ address {
   width: 0;
   height: 0.1em;
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 50%;
   background: #00aeff;
   transition: all 0.3s;
@@ -246,5 +385,81 @@ address {
   background: #ff5100;
 }
 .fotoSlider {
+  display: inline;
   color: yellowgreen;
+  background-color: darkred;
+}
+.carouselBoris {
+  margin-top: 5px;
+}
+.trgreen {
+  fill: green;
+}
+.tryelow {
+  fill: yellow;
+}
+.trred {
+  fill: red;
+}
+.svg-Nav-Icon {
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+}
+.strong-span {
+  font-weight: bold;
+}
+.flex-Container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+.item-flex {
+  /*border: 5px solid black;*/
+  /*outline: 5px dotted greenyellow;*/
+  margin: 0px auto;
+  flex-basis: content;
+  margin-bottom: 20px;
+}
+.main-Foto {
+  max-width: 470px;
+}
+.flex-addres {
+  order: -1;
+  padding-left: 5px;
+  flex-basis: 230px;
+  margin-bottom: 0px;
+}
+.flex-carusel {
+  flex-basis: 100%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.nav-link-current {
+  display: inline-block;
+}
+.nav-link-current:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.nav-link-current::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+
+  background-color: red;
+}
+.nav-item {
+  position: relative;
 }

@@ -47,15 +47,19 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <div class="container1">
+    <div class="container-All">
       <header>
-        <h1 id="heading1">Добро пожаловать в гости к Борису</h1>
+        <h1 id="heading-1">Добро пожаловать в гости к Борису</h1>
         <nav
           class="navbar navbar-expand-lg navbar-light navbar-color navbarBoris"
         >
-          <a class="navbar-brand" href="https://www.instagram.com/b.resler/"
-            >B.Resler</a
-          >
+          <div class="navbar-brand">
+            B.Resler<svg class="svg-Nav-Icon">
+              <polygon points="0 0 10 10 20 0" class="tryelow" />
+              <polygon points="25 0 35 10 45 0" class="trgreen" />
+              <polygon points="12.5 12 22.5 22 32.5 12" class="trred" />
+            </svg>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -87,7 +91,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="guestbook.html"
+                <a class="nav-link nav-link-current"
                   >Гостевая<span class="sr-only">(current)</span></a
                 >
               </li>
@@ -98,13 +102,13 @@
           </div>
         </nav>
       </header>
-      <main>
+      <main class="flex-Container item-flex-big">
         <div>
           <br />
           <form action="#" method="POST">
             <div class="row">
               <div class="col-">
-                <div class="textarea">
+                <div>
                   <label>
                     Ваше имя
                     <input
@@ -154,7 +158,7 @@
                 обосрать обидчика <input type="radio" name="guest" />
               </div>
             </div>
-            <div class="textarea">
+            <div>
               <textarea
                 rows="5"
                 cols="72"
@@ -183,23 +187,50 @@
         tabindex="0"
       ></iframe>
       <hr />
-      <address class="goodLink">
-        <div class="buttonUP goodLink">
-          <a href="#heading1">наверх </a>
-        </div>
-        <ul id="contact">
-          <li><a href="https://www.instagram.com/b.resler/">Instagram</a></li>
-          <li>Tel:+7-922-796-55-35</li>
-          <li>
-            Email: <a href="mailto:9bres0@gmail.com">9bres0@gmail. com</a>
-          </li>
-        </ul>
-      </address>
+      <aside class="item-flex flex-addres">
+        <address class="goodLink">
+          <ul class="contact" id="contact">
+            <li>
+              <a href="https://www.instagram.com/b.resler/">
+                <span class="instagramm-icon">Instagram</span></a
+              >
+            </li>
+            <li class="phone-icon-position">
+              <span class="phone-icon">Tel:+7-922-796-55-35</span>
+            </li>
+            <li class="mail-icon-position">
+              <a href="mailto:9bres0@gmail.com"
+                ><span class="mail-icon"
+                  >Email: <br />
+                  9bres0@gmail. com</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/boris.bresler.3"
+                ><span class="facebook-icon">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/BorisBresler"
+                ><span class="github-icon">Github</span></a
+              >
+            </li>
+            <li>
+              <a href="https://www.tripadvisor.ru/Profile/hypest"
+                ><span class="tripadvisor-icon">Tripadvisor</span></a
+              >
+            </li>
+          </ul>
+        </address>
+      </aside>
+      <div class="buttonUP goodLink">
+        <a href="#heading-1">наверх </a>
+      </div>
       <footer>
         <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
       </footer>
     </div>
-    <script src="/jquery-3.4.1.min.js"></script>
     <script src="index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

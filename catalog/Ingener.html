@@ -47,15 +47,19 @@
     <!-- шрифт для заголовков -->
   </head>
   <body>
-    <div class="container1">
+    <div class="container-All">
       <header>
-        <h1 id="heading1">Do&nbsp;you know about B.&nbsp;Resler?</h1>
+        <h1 id="heading-1">Do&nbsp;you know about B.&nbsp;Resler?</h1>
         <nav
           class="navbar navbar-expand-lg navbar-light navbar-color navbarBoris"
         >
-          <a class="navbar-brand" href="https://www.instagram.com/b.resler/"
-            >B.Resler</a
-          >
+          <div class="navbar-brand">
+            B.Resler<svg class="svg-Nav-Icon">
+              <polygon points="0 0 10 10 20 0" class="tryelow" />
+              <polygon points="25 0 35 10 45 0" class="trgreen" />
+              <polygon points="12.5 12 22.5 22 32.5 12" class="trred" />
+            </svg>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -76,7 +80,7 @@
                 <a class="nav-link" href="../catalog.html">Каталог</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Ingener.html"
+                <a class="nav-link nav-link-current"
                   >Инженер<span class="sr-only">(current)</span></a
                 >
               </li>
@@ -96,90 +100,134 @@
           </div>
         </nav>
       </header>
-      <main>
-        <div class="imgBlock">
-          <img
-            src="../image/borisMain400.jpg"
-            alt="B.Resler"
-            title="B.Resler"
-          />
-        </div>
-        <p class="Osnova">
-          Итак, дорогой друг. Ты&nbsp;все-таки решил узнать побольше
-          о&nbsp;данном товаре.
-          <br />
-          На&nbsp;данной странице ты&nbsp;увидишь примеры, что данный товар
-          подойдет как инженерный работник.
-        </p>
-        <h3 class="catalog bezobt">
-          Например, я&nbsp;могу быть начальником вашего цеха.<br />
-        </h3>
-        <div class="imgBlock">
-          <img
-            src="../image/bigboss.JPG"
-            alt="Boss for you manufactory"
-            title="Вашему цеху начальник не нужен?"
-            width="400"
-            height="400"
-          />
-        </div>
-        <div>
-          Только посмотрите, как я&nbsp;буду красиво смотреться
-          на&nbsp;ежегодных календарях.
-        </div>
-        <h3 class="catalog bezobt">
-          Я&nbsp;буду обкашливать ваши вопросики 24/7.
-        </h3>
-        <div class="imgBlock">
-          <img
-            src="../image/obka6livanieVoprosov-400.jpg"
-            alt="24/7"
-            title="24/7"
-            width="320"
-            height="400"
-          />
-        </div>
-        <div>В&nbsp;любом месте и&nbsp;в&nbsp;любом состоянии.</div>
-        <h3 class="catalog bezobt">
-          А&nbsp;также могу управлять различными грузоподьемными средствами.
-        </h3>
-        <div class="imgBlock">
-          <img
-            src="../image/takelajnieRaboti-400.jpg"
-            alt="kran"
-            width="320"
-            height="400"
-            title="здесь могла быть чья-то мамка"
-          />
-        </div>
-        <div>
-          Вы&nbsp;видете тут совместную работу двумя кранами,<br />
-          а&nbsp;это значит я&nbsp;смогу поднять даже сферическую мамку
-          в&nbsp;ваккуме! Если будет точка опоры.
-        </div>
-        <br />
-        <form action="#">
-          <input type="button" value="buy" />
-        </form>
-      </main>
-      <hr />
-      <div class="buttonUP goodLink">
-        <a href="#heading1">наверх </a>
+      <div class="flex-Container-big">
+        <main class="flex-Container item-flex-big">
+          <section class="item-flex">
+            <div class="imgBlock">
+              <img
+                src="../image/borisMain400.jpg"
+                srcset="
+                  ../image/borisMain300.jpg 300w,
+                  ../image/borisMain400.jpg 400w
+                "
+                sizes="(max-width: 450px) 270px, 380px"
+                alt="B.Resler"
+                title="B.Resler"
+              />
+            </div>
+            <p>
+              Итак, дорогой друг. Ты&nbsp;все-таки решил узнать побольше
+              о&nbsp;данном товаре.
+              <br />
+              На&nbsp;данной странице ты&nbsp;увидишь примеры, что данный товар
+              подойдет как инженерный работник.
+            </p>
+          </section>
+          <section class="item-flex">
+            <h3 class="catalog bezobt">
+              Например, я&nbsp;могу быть начальником вашего цеха.<br />
+            </h3>
+            <div class="imgBlock">
+              <img
+                src="../image/bigboss.JPG"
+                srcset="../image/bigboss300.jpg 300w, ../image/bigboss.JPG 600w"
+                sizes="(max-width: 450px) 270px, 380px"
+                alt="Boss for you manufactory"
+                title="Вашему цеху начальник не нужен?"
+              />
+            </div>
+            <div>
+              Только посмотрите, как я&nbsp;буду красиво смотреться
+              на&nbsp;ежегодных календарях.
+            </div>
+          </section>
+          <section class="item-flex">
+            <h3 class="catalog bezobt">
+              Я&nbsp;буду обкашливать ваши вопросики 24/7.
+            </h3>
+            <div class="imgBlock">
+              <img
+                src="../image/obka6livanieVoprosov-400.jpg"
+                srcset="../image/obka6livanieVoprosov-400.jpg 400w"
+                sizes="(max-width: 450px) 270px, 380px"
+                alt="24/7"
+                title="24/7"
+              />
+            </div>
+            <div>В&nbsp;любом месте и&nbsp;в&nbsp;любом состоянии.</div>
+          </section>
+          <section class="item-flex">
+            <h3 class="catalog bezobt">
+              А&nbsp;также могу управлять различными грузоподьемными средствами.
+            </h3>
+            <div class="imgBlock">
+              <img
+                src="../image/takelajnieRaboti-400.jpg"
+                srcset="../image/takelajnieRaboti-400.jpg 400w"
+                sizes="(max-width: 450px) 270px, 380px"
+                alt="kran"
+                title="здесь могла быть чья-то мамка"
+              />
+            </div>
+            <div>
+              Вы&nbsp;видете тут совместную работу двумя кранами,<br />
+              а&nbsp;это значит я&nbsp;смогу поднять даже сферическую мамку
+              в&nbsp;ваккуме!<br />
+              Если будет точка опоры.
+            </div>
+
+            <br />
+            <form action="#">
+              <input type="button" value="buy" />
+            </form>
+          </section>
+        </main>
+        <hr />
+        <aside class="item-flex flex-addres">
+          <address class="goodLink">
+            <ul class="contact" id="contact">
+              <li>
+                <a href="https://www.instagram.com/b.resler/">
+                  <span class="instagramm-icon">Instagram</span></a
+                >
+              </li>
+              <li class="phone-icon-position">
+                <span class="phone-icon">Tel:+7-922-796-55-35</span>
+              </li>
+              <li class="mail-icon-position">
+                <a href="mailto:9bres0@gmail.com"
+                  ><span class="mail-icon"
+                    >Email: <br />
+                    9bres0@gmail. com</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/boris.bresler.3"
+                  ><span class="facebook-icon">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/BorisBresler"
+                  ><span class="github-icon">Github</span></a
+                >
+              </li>
+              <li>
+                <a href="https://www.tripadvisor.ru/Profile/hypest"
+                  ><span class="tripadvisor-icon">Tripadvisor</span></a
+                >
+              </li>
+            </ul>
+          </address>
+        </aside>
       </div>
-      <address class="goodLink">
-        <ul id="contact">
-          <li><a href="https://www.instagram.com/b.resler/">Instagram</a></li>
-          <li>Tel:+7-922-796-55-35</li>
-          <li>
-            Email: <a href="mailto:9bres0@gmail.com">9bres0@gmail. com</a>
-          </li>
-        </ul>
-      </address>
+      <div class="buttonUP goodLink">
+        <a href="#heading-1">наверх </a>
+      </div>
       <footer>
         <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
       </footer>
     </div>
-    <script src="/jquery-3.4.1.min.js"></script>
     <script src="index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

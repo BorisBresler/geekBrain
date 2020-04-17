@@ -2,22 +2,32 @@
   main {
     width: 95%;
     padding: 0 5px 5px 5px;
-    margin-top: 40px;
+    margin-top: 57px;
     margin-bottom: 5px;
   }
-  div.buttonUP {
-    margin-right: 5%;
+  .item-flex {
+    width: 90%;
+    margin-right: 20px;
+  }
+  .main-Foto {
+    width: 270px;
+  }
+  .flex-Container-big {
+    margin-top: -50px;
   }
 }
 @media (max-width: 500px) and (min-width: 425px) {
   main {
     width: 90%;
     padding: 0 5px 5px 5px;
-    margin-top: 5px;
+    margin-top: 57px;
     margin-bottom: 5px;
   }
-  div.buttonUP {
-    margin-right: 5%;
+  .main-Foto {
+    width: 350px;
+  }
+  .flex-Container-big {
+    margin-top: -50px;
   }
 }
 @media (max-width: 700px) and (min-width: 501px) {
@@ -27,16 +37,20 @@
   .heading3 {
     font-size: 1.2em;
   }
-  div.buttonUP {
-    margin-right: 5%;
+  .flex-Container-big {
+    margin-top: -2px;
   }
 }
 @media (min-width: 701px) {
   main {
     width: 80%;
+    margin-top: 20px;
   }
   .heading3 {
     font-size: 1.5em;
+  }
+  .flex-Container-big {
+    margin-top: -10px;
   }
 }
 @media (min-width: 1024px) {
@@ -44,5 +58,30 @@
   footer {
     margin-left: -1.75%;
     margin-right: -1.75%;
+  }
+  div.navbar-brand {
+    padding-left: 30px;
+  }
+  .flex-Container-big {
+    display: flex;
+    max-width: 90%;
+  }
+  address {
+    margin-left: 12%;
+  }
+  .item-flex-big {
+    flex-grow: 2;
+  }
+  div.buttonUP {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-link-current {
+    border-bottom: 2px solid red;
+  }
+  .nav-link-current::before {
+    height: 0px;
   }
 }
