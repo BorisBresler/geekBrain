@@ -2,7 +2,6 @@
   main {
     width: 95%;
     padding: 0 5px 5px 5px;
-<<<<<<< HEAD
     margin-top: 57px;
     margin-bottom: 5px;
   }
@@ -15,20 +14,12 @@
   }
   .flex-Container-big {
     margin-top: -50px;
-=======
-    margin-top: 40px;
-    margin-bottom: 5px;
-  }
-  div.buttonUP {
-    margin-right: 5%;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   }
 }
 @media (max-width: 500px) and (min-width: 425px) {
   main {
     width: 90%;
     padding: 0 5px 5px 5px;
-<<<<<<< HEAD
     margin-top: 57px;
     margin-bottom: 5px;
   }
@@ -37,13 +28,6 @@
   }
   .flex-Container-big {
     margin-top: -50px;
-=======
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  div.buttonUP {
-    margin-right: 5%;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   }
 }
 @media (max-width: 700px) and (min-width: 501px) {
@@ -53,32 +37,21 @@
   .heading3 {
     font-size: 1.2em;
   }
-<<<<<<< HEAD
   .flex-Container-big {
     margin-top: -2px;
-=======
-  div.buttonUP {
-    margin-right: 5%;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   }
 }
 @media (min-width: 701px) {
   main {
     width: 80%;
-<<<<<<< HEAD
     margin-top: 20px;
-=======
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   }
   .heading3 {
     font-size: 1.5em;
   }
-<<<<<<< HEAD
   .flex-Container-big {
     margin-top: -10px;
   }
-=======
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
 }
 @media (min-width: 1024px) {
   header,
@@ -86,7 +59,6 @@
     margin-left: -1.75%;
     margin-right: -1.75%;
   }
-<<<<<<< HEAD
   div.navbar-brand {
     padding-left: 30px;
   }
@@ -112,6 +84,4 @@
   .nav-link-current::before {
     height: 0px;
   }
-=======
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
 }

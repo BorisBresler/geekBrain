@@ -10,7 +10,6 @@ body {
   background-image: url(/geekbrain/image/background/squreel.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
-<<<<<<< HEAD
 }
 img {
   max-width: 100%;
@@ -41,75 +40,6 @@ main {
   border: 1.5px solid rgba(20, 18, 18, 0.801);
   overflow: hidden;
   font-family: Rubik, Arial, sans-serif;
-=======
-}
-header {
-  display: block;
-  height: 100px;
-  position: relative;
-}
-nav a {
-  padding-left: 1%;
-  padding-right: 10px;
-  padding-bottom: 6px;
-}
-nav ul {
-  text-align: right;
-}
-main {
-  margin: 5px auto;
-  padding: 0 20px 20px 20px;
-  border: 1.5px solid rgba(20, 18, 18, 0.801);
-  overflow: hidden;
-  font-family: Rubik;
-}
-main img {
-  display: block;
-  margin: auto;
-  outline: 2px solid goldenrod;
-  border: 3px solid burlywood;
-}
-address {
-  margin-top: 1%;
-  padding-left: 7%;
-}
-footer {
-  display: block;
-  height: 50px;
-  background-color: dimgrey;
-  text-align: end;
-  position: relative;
-}
-hr {
-  margin: 0% -1% -1% -1%;
-  padding: 0px;
-}
-.container1 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.navbarBoris {
-  font-family: Kurale !important;
-  font-size: 1.1em;
-  z-index: 1;
-}
-.navbar-color {
-  font-family: Rubik;
-  background-color: rgba(155, 238, 72, 0.781);
-  margin: -5px 0% 0px 0%;
-  padding: 10px 1% 0px 5px;
-  font-weight: 400;
-  border-radius: 0% 0% 15% 15%;
-}
-#heading1 {
-  text-align: center;
-  font-family: Rubik;
-  background-color: rgba(127, 238, 16, 0.911);
-  margin: -5px 0% 5px 0%;
-  padding: 10px 1% 0px 5px;
-  font-size: 2em;
-  font-weight: 400;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
 }
 main img {
   display: block;
@@ -133,7 +63,6 @@ footer {
   text-align: end;
   position: relative;
 }
-<<<<<<< HEAD
 hr {
   margin: 0% -1% -1% -1%;
   padding: 0px;
@@ -282,8 +211,6 @@ ul.contact span:active::before {
 ul.Spisok li {
   text-align: left;
 }
-=======
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
 
 .OpisanieTovara {
   font-weight: 400;
@@ -297,11 +224,7 @@ main img:hover {
 input[type="text"] {
   text-transform: capitalize;
   height: 2em;
-<<<<<<< HEAD
   min-width: 150px;
-=======
-  width: 150px;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   padding-left: 38px;
   border: 3px solid rgb(255, 255, 0);
   border-radius: 50rem;
@@ -310,21 +233,13 @@ input[type="text"] {
 input[type="password"] {
   height: 2em;
   padding-left: 45px;
-<<<<<<< HEAD
   min-width: 150px;
-=======
-  width: 150px;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   border: 3px solid rgb(255, 255, 0);
   border-radius: 50rem;
 }
 input[type="email"] {
   height: 2em;
-<<<<<<< HEAD
   min-width: 150px;
-=======
-  width: 150px;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   padding-left: 47px;
   margin: 0 auto;
   border: 3px solid rgb(255, 255, 0);
@@ -348,16 +263,10 @@ input[type="email"]:focus {
 nav a:active {
   color: green;
 }
-<<<<<<< HEAD
 .textarea {
   text-transform: uppercase;
   border: 3px solid rgba(127, 238, 16, 0.911);
   border-radius: 25% / 50%;
-=======
-*/ .textarea {
-  text-transform: uppercase;
-  border: 3px solid rgba(127, 238, 16, 0.911);
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   overflow: hidden;
 }
 table {
@@ -377,21 +286,6 @@ thead th {
 .product {
   margin: 20px;
 }
-<<<<<<< HEAD
-=======
-.logo {
-  width: 100px;
-  height: 50px;
-  background-color: navajowhite;
-  color: dimgrey;
-  float: left;
-  margin: 12px 35px;
-  /*position: absolute;
-  left: 50px;
-  z-index: -1;
-  */
-}
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
 
 .footer {
   position: absolute;
@@ -415,7 +309,6 @@ input[value="buy"]:active {
 }
 div.buttonUP {
   text-align: center;
-<<<<<<< HEAD
   color: darkorange;
   border: 1px solid rgba(155, 238, 72, 0.781);
   border-radius: 25%;
@@ -466,30 +359,6 @@ div.buttonUP:hover::after {
   border: 0px;
 }
 
-=======
-  border: 1px solid rgba(155, 238, 72, 0.781);
-  border-radius: 25%;
-  width: 75px;
-  float: right;
-  margin-right: 50%;
-  margin-top: 2%;
-  background-color: gainsboro;
-  color: darkorange;
-}
-address {
-  padding-left: 7%;
-}
-.kartaKrasnogorsk {
-  width: 90%;
-  height: 374px;
-  border: 0px;
-}
-
-.button {
-  text-align: center;
-}
-
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
 .goodLink a:hover {
   color: #ff5100;
 }
@@ -506,11 +375,7 @@ address {
   width: 0;
   height: 0.1em;
   position: absolute;
-<<<<<<< HEAD
   bottom: 0%;
-=======
-  bottom: 0;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
   left: 50%;
   background: #00aeff;
   transition: all 0.3s;
@@ -521,7 +386,6 @@ address {
   background: #ff5100;
 }
 .fotoSlider {
-<<<<<<< HEAD
   display: inline;
   color: yellowgreen;
   background-color: darkred;
@@ -599,7 +463,4 @@ address {
 }
 .nav-item {
   position: relative;
-=======
-  color: yellowgreen;
->>>>>>> bc6a6114f9d0c493c9a4f6e6be6346e3fce85039
 }
