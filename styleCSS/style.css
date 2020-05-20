@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0;
 }
-html {
-  background-color: aquamarine;
-  line-height: 150%;
-}
+
 body {
+  font-family: Podkova, Times, serif;
+  line-height: 150%;
   background-image: url(/geekbrain/image/background/squreel.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
@@ -21,7 +20,7 @@ header {
   position: relative;
   background-image: linear-gradient(
     to bottom,
-    rgba(150, 255, 104, 0.774),
+    rgba(247, 180, 8, 0.774),
     rgba(195, 247, 8, 1)
   );
   border-radius: 0% 0% 15% 15%;
@@ -39,7 +38,6 @@ main {
   padding: 0 20px 20px 20px;
   border: 1.5px solid rgba(20, 18, 18, 0.801);
   overflow: hidden;
-  font-family: Rubik, Arial, sans-serif;
 }
 main img {
   display: block;
@@ -59,9 +57,9 @@ footer {
     rgba(107, 89, 89, 1),
     rgba(202, 142, 142, 0.774)
   );
-
-  text-align: end;
+  text-align: center;
   position: relative;
+  border-radius: 15% 15% 0% 0%;
 }
 hr {
   margin: 0% -1% -1% -1%;
@@ -71,25 +69,29 @@ div.container-All {
   max-width: 2500px;
   margin: 0 auto;
 }
-.navbarBoris {
-  font-family: Kurale, Times, serif !important;
+nav.navbarBoris {
+  font-family: Kurale, Times, serif;
   font-size: 1.1em;
   z-index: 1;
 }
 .navbar-color {
-  font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
   margin: -5px 0% 0px 0%;
-  padding: 10px 1% 0px 10px;
+  padding: 0px 1% 0px 1%;
 }
-#heading-1 {
+.heading-1 {
+  font-family: Raleway, sans-serif;
   text-align: center;
-  font-family: Rubik, Arial, sans-serif;
   font-size: 2em;
   font-weight: 400;
-
+  color: rgba(8, 75, 247, 0.6);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
   margin: -5px 0% 5px 0%;
   padding: 10px 1% 0px 5px;
+}
+.navbar-brand {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
 .main-index-spisok {
   display: flex;
@@ -132,14 +134,14 @@ ul.contact li {
   opacity: 0.5;
 }
 
-.phone-icon-position {
-  padding-bottom: 12px !important;
+ul.contact li.phone-icon-position {
+  padding-bottom: 12px;
 }
 .phone-icon::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -32px;
+  top: -13px;
+  left: -52px;
   width: 50px;
   height: 50px;
   background-image: url(/geekbrain/image/icon/whatsap.png);
@@ -147,8 +149,8 @@ ul.contact li {
   background-position: 0 0;
   opacity: 0.5;
 }
-.mail-icon-position {
-  padding-bottom: 17px !important;
+ul.contact li.mail-icon-position {
+  padding-bottom: 17px;
 }
 .mail-icon::before {
   content: "";
@@ -212,43 +214,31 @@ ul.Spisok li {
   text-align: left;
 }
 
-.OpisanieTovara {
-  font-weight: 400;
-  text-align: left;
-  font-size: 16px;
-}
-
 main img:hover {
   outline: 0px;
 }
 input[type="text"] {
-  text-transform: capitalize;
-  height: 2em;
+  min-height: 2em;
   min-width: 150px;
-  padding-left: 38px;
+  padding-left: 5px;
   border: 3px solid rgb(255, 255, 0);
   border-radius: 50rem;
-  text-transform: capitalize;
 }
 input[type="password"] {
-  height: 2em;
-  padding-left: 45px;
+  min-height: 2em;
   min-width: 150px;
+  padding-left: 5px;
   border: 3px solid rgb(255, 255, 0);
   border-radius: 50rem;
 }
 input[type="email"] {
-  height: 2em;
+  min-height: 2em;
   min-width: 150px;
-  padding-left: 47px;
-  margin: 0 auto;
+  padding-left: 5px;
   border: 3px solid rgb(255, 255, 0);
   border-radius: 50rem;
 }
-input[type="email"]:focus {
-  color: forestgreen;
-  background-color: black;
-}
+
 .catalog {
   text-align: center;
 }
@@ -256,18 +246,20 @@ input[type="email"]:focus {
   text-align: center;
 }
 
-.nav-link:hover {
-  color: rebeccapurple !important;
-  text-decoration: underline !important;
+li.nav-item a.nav-link:hover {
+  text-decoration: underline;
 }
 nav a:active {
   color: green;
 }
 .textarea {
   text-transform: uppercase;
+  text-align: center;
   border: 3px solid rgba(127, 238, 16, 0.911);
   border-radius: 25% / 50%;
-  overflow: hidden;
+
+  width: 100%;
+  max-width: 700px;
 }
 table {
   border: 2px solid black;
@@ -288,10 +280,16 @@ thead th {
 }
 
 .footer {
-  position: absolute;
-  right: 10%;
-  top: 10%;
-  color: aliceblue;
+  float: right;
+  padding-right: 20px;
+  color: rgba(183, 235, 235, 0.6);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+}
+.footer-data {
+  float: left;
+  padding-left: 25px;
+  color: rgba(183, 235, 235, 0.6);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
 }
 input[value="buy"]:hover {
   background-color: tomato;
@@ -299,30 +297,28 @@ input[value="buy"]:hover {
 input[value="buy"]:active {
   background-color: goldenrod;
 }
-.imgBlock {
+.img-float {
   float: left;
-  margin-right: 20px;
+  padding-right: 5px;
   margin-top: 5px;
 }
 .bezobt {
   clear: both;
 }
 div.buttonUP {
-  text-align: center;
-  color: darkorange;
-  border: 1px solid rgba(155, 238, 72, 0.781);
-  border-radius: 25%;
-  background-color: gainsboro;
-  width: 75px;
-  margin-left: 40%;
+  position: relative;
+  width: 90px;
+  margin-left: 46%;
   margin-bottom: 10px;
   margin-top: -20px;
   padding-right: 15px;
-  position: relative;
+  text-align: center;
+  color: darkorange;
+  background-color: gainsboro;
+  border: 1px solid rgba(155, 238, 72, 0.781);
+  border-radius: 25%;
 }
-div.buttonUp a {
-  padding-left: 3px;
-}
+
 div.buttonUP::after {
   content: "";
   position: absolute;
@@ -348,25 +344,29 @@ div.buttonUP::after {
     opacity: 1;
   }
 }
-div.buttonUP:hover::after {
+div.buttonUP:hover::after,
+div.buttonUP:focus::after,
+div.buttonUP:active::after {
   animation: 1s infinite buttonUp;
   animation-direction: alternate;
 }
 
 .kartaKrasnogorsk {
-  width: 90%;
-  min-height: 374px;
+  width: 50%;
+  min-width: 150px;
   border: 0px;
+  margin: 0 auto;
 }
 
-.goodLink a:hover {
+.goodLink a:hover,
+.goodLink a:focus,
+.goodLink a:active {
   color: #ff5100;
 }
 .goodLink a {
   font-weight: 400;
   color: #00aeff;
   text-decoration: none;
-  font-size: 1em;
   position: relative;
   transition: all 0.6s;
 }
@@ -380,7 +380,9 @@ div.buttonUP:hover::after {
   background: #00aeff;
   transition: all 0.3s;
 }
-.goodLink a:hover::before {
+.goodLink a:hover::before,
+.goodLink a:focus::before,
+.goodLink a:active::before {
   width: 100%;
   left: 0;
   background: #ff5100;
@@ -397,7 +399,7 @@ div.buttonUP:hover::after {
   fill: green;
 }
 .tryelow {
-  fill: yellow;
+  fill: rgb(255, 255, 0);
 }
 .trred {
   fill: red;
@@ -421,12 +423,15 @@ div.buttonUP:hover::after {
 .item-flex {
   /*border: 5px solid black;*/
   /*outline: 5px dotted greenyellow;*/
-  margin: 0px auto;
-  flex-basis: content;
+  flex-basis: auto;
   margin-bottom: 20px;
+  flex-grow: 1;
+}
+.item-one-flex {
+  margin: 0 auto;
 }
 .main-Foto {
-  max-width: 470px;
+  margin-top: 10px;
 }
 .flex-addres {
   order: -1;
@@ -447,14 +452,16 @@ div.buttonUP:hover::after {
 .nav-link-current {
   display: inline-block;
 }
-.nav-link-current:hover {
-  text-decoration: none !important;
-  color: inherit !important;
+
+ul.navbar-Boris li.nav-item a.nav-link-current:hover {
+  text-decoration: none;
+  color: inherit;
 }
+
 .nav-link-current::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 5px;
   right: 5px;
   height: 2px;
@@ -463,4 +470,64 @@ div.buttonUP:hover::after {
 }
 .nav-item {
   position: relative;
+}
+.travel-img {
+  margin-right: 15px;
+}
+span.italick {
+  font-style: italic;
+}
+.catalog-table {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+input {
+  position: relative;
+}
+
+/* попытка валидации в реальном времени */
+.input-requirements {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: left;
+  list-style: disc;
+  list-style-position: inside;
+  max-width: 400px;
+  margin: 10px auto;
+  color: rgb(150, 150, 150);
+}
+.input-requirements li.invalid {
+  color: #e74c3c;
+}
+.input-requirements li.valid {
+  color: #2ecc71;
+}
+.input-requirements li.valid:after {
+  display: inline-block;
+  padding-left: 10px;
+  content: "\2713";
+}
+input:not([type="submit"]) + .input-requirements {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1.5s ease-out;
+}
+input:not([type="submit"]):hover + .input-requirements,
+input:not([type="submit"]):focus + .input-requirements,
+input:not([type="submit"]):active + .input-requirements {
+  max-height: 500px; /* any large number (bigger then the .input-requirements list) */
+  transition: max-height 1.5s ease-in;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+[class^="grid-column"] {
+  outline: 2px solid rebeccapurple;
+  min-height: 50px;
+}
+.grid-column1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Boris Bresler" />
@@ -7,54 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="What do you know about Boris Bresler?" />
     <title>
-      Guest book B.Resler
+      It's all about B.Resler!
     </title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <link href="/bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
-      href="../image/rick-128x128.png"
+      href="image/rick-128x128.png"
       type="image/x-icon"
     />
-    <link href="styleCSS/style.css" rel="stylesheet" type="text/css" />
-    <link href="styleCSS/styleMedia.css" rel="stylesheet" type="text/css" />
+    <link href="styleCSS/style.css" rel="stylesheet" />
+    <link href="styleCSS/styleMedia.css" rel="stylesheet" />
     <link
       href="http://fonts.googleapis.com/css?family=Kurale"
       rel="stylesheet"
-      type="text/css"
     />
-    <link
-      href="http://fonts.googleapis.com/css?family=Lemonada"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- шрифт для рассказов -->
-    <link
-      href="http://fonts.googleapis.com/css?family=Rubik"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- шрифт для просто текста -->
+    <!-- шрифт для меню навигации -->
     <link
       href="http://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
-      type="text/css"
     />
     <!-- шрифт для заголовков -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- шрифт для просто текста -->
   </head>
   <body>
     <div class="container-All">
       <header>
-        <h1 id="heading-1">Добро пожаловать в гости к Борису</h1>
+        <h1 class="heading-1" id="heading-1">
+          Do&nbsp;you know about B.&nbsp;Resler?
+        </h1>
         <nav
           class="navbar navbar-expand-lg navbar-light navbar-color navbarBoris"
         >
           <div class="navbar-brand">
-            B.Resler<svg class="svg-Nav-Icon">
+            B.&nbsp;Resler<svg class="svg-Nav-Icon">
               <polygon points="0 0 10 10 20 0" class="tryelow" />
               <polygon points="25 0 35 10 45 0" class="trgreen" />
               <polygon points="12.5 12 22.5 22 32.5 12" class="trred" />
@@ -72,9 +62,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto navbar-Boris">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Главная </a>
+                <a class="nav-link" href="index.html"
+                  >Главная <span class="sr-only">(current)</span></a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="catalog.html">Каталог</a>
@@ -91,9 +83,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-current"
-                  >Гостевая<span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link nav-link-current" href="#">Гостевая</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Контакты</a>
@@ -102,150 +92,176 @@
           </div>
         </nav>
       </header>
-      <main class="flex-Container item-flex-big">
-        <div>
-          <br />
-          <form action="#" method="POST">
-            <div class="row">
-              <div class="col-">
-                <div>
-                  <label>
-                    Ваше имя
+      <div class="flex-Container-big">
+        <main class="item-flex-big">
+          <div>
+            <br />
+            <form
+              class="UserGuestForm"
+              action="#"
+              method="POST"
+              action="Js/log.odt"
+              enctype="multipart/form-data"
+            >
+              <div class="flex-Container">
+                <div class="item-flex">
+                  <label for="userName">
+                    <span>Ваше имя</span>
                     <input
                       type="text"
                       name="name"
+                      id="userName"
                       placeholder="Ваше имя"
+                      minlength="3"
+                      maxlength="25"
                       required
                       autofocus
                     />
+                    <ul class="input-requirements">
+                      <li>Имя не менее 3 символов</li>
+                      <li>Имя не содержит специальных символов</li>
+                    </ul>
                   </label>
                 </div>
-              </div>
-              <div class="col-">
-                <label>
-                  &#8194;Пароль
-                  <input
-                    type="password"
-                    name="password"
-                    placeholder="Пароль"
-                    required
-                  />
-                </label>
+                <div class="item-flex">
+                  <label for="userPass">
+                    <span>Пароль</span>
+                    <input
+                      type="password"
+                      name="password"
+                      id="userPass"
+                      placeholder="Пароль"
+                      minlength="6"
+                      maxlength="25"
+                      required
+                    />
+                    <ul class="input-requirements">
+                      <li>Не менее 6 символов</li>
+                      <li>Содержит хотя бы 1 цифру</li>
+                      <li>Содержит хотя бы одну маленькую букву</li>
+                      <li>Содержит хотя бы одну большую букву</li>
+                      <li>Содержит специальный символ</li>
+                    </ul>
+                  </label>
+                  <br />
+                  <label for="pass-repeat">
+                    <span>Repeat password</span>
+                    <input
+                      type="password"
+                      id="pass-repeat"
+                      maxlength="25"
+                      minlength="6"
+                      required
+                    />
+                    <ul class="input-requirements">
+                      <li>Пароль совпадает</li>
+                    </ul>
+                  </label>
+                </div>
+                <div class="item-flex">
+                  <label for="userEmail">
+                    <span>E-mail</span>
+                    <input
+                      type="email"
+                      name="email"
+                      id="userEmail"
+                      placeholder="E-mail"
+                      required
+                    />
+                    <ul class="input-requirements">
+                      <li>E-mail должен быть настоящим и валидным</li>
+                    </ul>
+                  </label>
+                </div>
+                <div class="item-flex">
+                  <span>Что вы&nbsp;хотите написать?&#8195; </span>
+                  <br />что-то приятное <input type="radio" name="guest" />
+                  <br />обосрать обидчика
+                  <input type="radio" name="guest" />
+                </div>
                 <br />
               </div>
-              <div class="col-">
-                <label>
-                  &#8194;E-mail
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
-                </label>
+              <div class="item-flex">
+                <textarea
+                  class="textarea"
+                  rows="5"
+                  cols="72"
+                  placeholder="Пишем здесь"
+                ></textarea>
               </div>
-
-              <br />
-            </div>
-            <div class="row">
-              <div class="col-">
-                <span>Что вы&nbsp;хотите написать:&#8195; </span>
-              </div>
-              <div class="col-">
-                что-то приятное <input type="radio" name="guest" checked />
-              </div>
-              <div class="col-">
-                обосрать обидчика <input type="radio" name="guest" />
-              </div>
-            </div>
-            <div>
-              <textarea
-                rows="5"
-                cols="72"
-                placeholder="Пишем здесь"
-                class="textarea"
-              >
-              </textarea>
-            </div>
-            <input type="submit" value="Отправить" />
-            <input type="reset" value="Сброс" />
-            <input type="button" id="buttonguest" value="Фигачь свой текст" />
-          </form>
-          <br />
-          <form enctype="multipart/form-data"><input type="file" /></form>
-        </div>
-        <div>
-          Нужно было встроить карту и&nbsp;вот где я&nbsp;нахожусь например
-        </div>
-        <div id="guest"></div>
-      </main>
-      <iframe
-        class="kartaKrasnogorsk"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.718401233472!2d37.36781841543177!3d55.815488994623585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54647959e5801%3A0xf2d9fd64fef665f1!2z0JrRgNCw0YHQvdC-0LPQvtGA0YHQutC40Lkg0LHRg9C7LiwgMTMsINCa0YDQsNGB0L3QvtCz0L7RgNGB0LosINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MzQwMQ!5e0!3m2!1sru!2sru!4v1584949908177!5m2!1sru!2sru"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
-      <hr />
-      <aside class="item-flex flex-addres">
-        <address class="goodLink">
-          <ul class="contact" id="contact">
-            <li>
-              <a href="https://www.instagram.com/b.resler/">
-                <span class="instagramm-icon">Instagram</span></a
-              >
-            </li>
-            <li class="phone-icon-position">
-              <span class="phone-icon">Tel:+7-922-796-55-35</span>
-            </li>
-            <li class="mail-icon-position">
-              <a href="mailto:9bres0@gmail.com"
-                ><span class="mail-icon"
-                  >Email: <br />
-                  9bres0@gmail. com</span
-                ></a
-              >
-            </li>
-            <li>
-              <a href="https://www.facebook.com/boris.bresler.3"
-                ><span class="facebook-icon">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/BorisBresler"
-                ><span class="github-icon">Github</span></a
-              >
-            </li>
-            <li>
-              <a href="https://www.tripadvisor.ru/Profile/hypest"
-                ><span class="tripadvisor-icon">Tripadvisor</span></a
-              >
-            </li>
-          </ul>
-        </address>
-      </aside>
+              <input type="submit" value="Отправить" />
+              <input type="reset" value="Сброс" />
+              <input type="button" id="buttonguest" value="Фигачь свой текст" />
+              <input type="file" />
+            </form>
+            <br />
+          </div>
+          <div class="guestNote"></div>
+          <div>
+            Нужно было встроить карту и&nbsp;вот где я&nbsp;нахожусь, например
+          </div>
+          <iframe
+            class="kartaKrasnogorsk item-flex"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.718401233472!2d37.36781841543177!3d55.815488994623585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54647959e5801%3A0xf2d9fd64fef665f1!2z0JrRgNCw0YHQvdC-0LPQvtGA0YHQutC40Lkg0LHRg9C7LiwgMTMsINCa0YDQsNGB0L3QvtCz0L7RgNGB0LosINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDE0MzQwMQ!5e0!3m2!1sru!2sru!4v1584949908177!5m2!1sru!2sru"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </main>
+        <hr />
+        <aside class="item-flex flex-addres">
+          <address class="goodLink">
+            <ul class="contact" id="contact">
+              <li>
+                <a href="https://www.instagram.com/b.resler/">
+                  <span class="instagramm-icon">Instagram</span></a
+                >
+              </li>
+              <li class="phone-icon-position">
+                <a tabindex="0"
+                  ><span class="phone-icon">Tel:+7-922-796-55-35</span></a
+                >
+              </li>
+              <li class="mail-icon-position">
+                <a href="mailto:9bres0@gmail.com"
+                  ><span class="mail-icon"
+                    >Email: <br />
+                    9bres0@gmail. com</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/boris.bresler.3"
+                  ><span class="facebook-icon">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/BorisBresler"
+                  ><span class="github-icon">Github</span></a
+                >
+              </li>
+              <li>
+                <a href="https://www.tripadvisor.ru/Profile/hypest"
+                  ><span class="tripadvisor-icon">Tripadvisor</span></a
+                >
+              </li>
+            </ul>
+          </address>
+        </aside>
+      </div>
       <div class="buttonUP goodLink">
         <a href="#heading-1">наверх </a>
       </div>
       <footer>
+        <div class="footer-data"></div>
         <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
+        <div class="bezobt"></div>
       </footer>
     </div>
-    <script src="index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <script src="Js/datasegodnya.js"></script>
+    <script src="Js/GuestBook.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>

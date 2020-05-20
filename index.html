@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Boris Bresler" />
@@ -9,52 +9,42 @@
     <title>
       It's all about B.Resler!
     </title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <link href="css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
       href="image/rick-128x128.png"
       type="image/x-icon"
     />
-    <link href="styleCSS/style.css" rel="stylesheet" type="text/css" />
-    <link href="styleCSS/styleMedia.css" rel="stylesheet" type="text/css" />
+    <link href="styleCSS/style.css" rel="stylesheet" />
+    <link href="styleCSS/styleMedia.css" rel="stylesheet" />
     <link
       href="http://fonts.googleapis.com/css?family=Kurale"
       rel="stylesheet"
-      type="text/css"
     />
-    <link
-      href="http://fonts.googleapis.com/css?family=Lemonada"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- шрифт для рассказов -->
-    <link
-      href="http://fonts.googleapis.com/css?family=Rubik"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- шрифт для просто текста -->
+    <!-- шрифт для меню навигации -->
     <link
       href="http://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
-      type="text/css"
     />
     <!-- шрифт для заголовков -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- шрифт для просто текста -->
   </head>
   <body>
     <div class="container-All">
       <header>
-        <h1 id="heading-1">Do&nbsp;you know about B.&nbsp;Resler?</h1>
+        <h1 class="heading-1" id="heading-1">
+          Do&nbsp;you know about B.&nbsp;Resler?
+        </h1>
         <nav
           class="navbar navbar-expand-lg navbar-light navbar-color navbarBoris"
         >
           <div class="navbar-brand">
-            B.Resler<svg class="svg-Nav-Icon">
+            B.&nbsp;Resler<svg class="svg-Nav-Icon">
               <polygon points="0 0 10 10 20 0" class="tryelow" />
               <polygon points="25 0 35 10 45 0" class="trgreen" />
               <polygon points="12.5 12 22.5 22 32.5 12" class="trred" />
@@ -72,7 +62,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto navbar-Boris">
               <li class="nav-item active">
                 <a class="nav-link nav-link-current"
                   >Главная <span class="sr-only">(current)</span></a
@@ -104,9 +94,8 @@
       </header>
       <div class="flex-Container-big">
         <main class="flex-Container item-flex-big">
-          <br />
           <article class="item-flex">
-            <picture class="mainfoto">
+            <picture>
               <source
                 media="(max-width: 480px)"
                 srcset="image/borismane2-300.jpg"
@@ -134,22 +123,25 @@
             </h3>
           </article>
           <section class="item-flex">
-            <span
-              >Здесь, знаете ли, информация о&nbsp;<span class="strong-span"
+            <h3 class="catalog">
+              Здесь, знаете&nbsp;ли, информация о&nbsp;<span class="italick"
                 >Борисе:</span
-              ></span
-            >
+              >
+            </h3>
             <br />
-            <span
-              >Я&nbsp;родился в&nbsp;90ые, в центре города Уфа.<br />Затем была
-              школа и&nbsp;прочая ботва. <br />
+            <div class="catalog">
+              Я&nbsp;родился в&nbsp;90ые, в&nbsp;центре города Уфа.<br />Затем
+              была школа и&nbsp;прочая ботва. <br />
               Потом начался КВН и&nbsp;институт.<br />
               Ночная жизнь и&nbsp;домашний уют.
-            </span>
+            </div>
           </section>
           <section class="item-flex">
-            <h3>Тот самый Борис, в&nbsp;которого <i>*** попадешь!</i></h3>
-            <p class="xarakteristika">
+            <h3>
+              Тот самый Борис, в&nbsp;которого
+              <span class="italick">*** попадешь!</span>
+            </h3>
+            <p>
               Здесь находятся технические характеристики на&nbsp;данный товар:
             </p>
             <ul class="main-index-spisok">
@@ -177,7 +169,9 @@
                 >
               </li>
               <li class="phone-icon-position">
-                <span class="phone-icon">Tel:+7-922-796-55-35</span>
+                <a tabindex="0">
+                  <span class="phone-icon">Tel:+7-922-796-55-35</span></a
+                >
               </li>
               <li class="mail-icon-position">
                 <a href="mailto:9bres0@gmail.com"
@@ -210,24 +204,14 @@
         <a href="#heading-1">наверх </a>
       </div>
       <footer>
+        <div class="footer-data"></div>
         <div class="footer">&copy;&nbsp;2020&nbsp;B. Resler</div>
+        <div class="bezobt"></div>
       </footer>
     </div>
-    <script src="index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <script src="Js/datasegodnya.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
