@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Boris Bresler" />
@@ -9,15 +9,15 @@
     <title>
       It's all about B.Resler!
     </title>
-    <link href="../css/bootstrap-grid.css" rel="stylesheet" />
-    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
-      href="../image/rick-128x128.png"
+      href="image/rick-128x128.png"
       type="image/x-icon"
     />
-    <link href="../styleCSS/style.css" rel="stylesheet" />
-    <link href="../styleCSS/styleMedia.css" rel="stylesheet" />
+    <link href="styleCSS/style.css" rel="stylesheet" />
+    <link href="styleCSS/styleMedia.css" rel="stylesheet" />
     <link
       href="http://fonts.googleapis.com/css?family=Kurale"
       rel="stylesheet"
@@ -62,32 +62,34 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto navbar-Boris">
               <li class="nav-item active">
-                <a class="nav-link" href="../index.html">Главная </a>
+                <a class="nav-link" href="index.html">Главная </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../catalog.html">Каталог</a>
+                <a class="nav-link" href="catalog.html">Каталог</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Ingener.html">Инженер</a>
+                <a class="nav-link" href="catalog/Ingener.html">Инженер</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-current"
-                  >КВН<span class="sr-only">(current)</span></a
+                <a class="nav-link" href="catalog/KVN.html">КВН</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog/travelblog.html"
+                  >Путешествия</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="travelblog.html">Путешествия</a>
+                <a class="nav-link" href="guestbook.html">Гостевая</a>
+              </li>
+              <li class="nav-item nav-link-current">
+                <a class="nav-link">
+                  Анимация<span class="sr-only">(current)</span></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../guestbook.html">Гостевая</a>
-              </li>
-              <li class="nav-item">
-                <a href="../animation.html" class="nav-link"> Анимация</a>
-              </li>
-              <li class="nav-item">
-                <a href="../zada4ki.html" class="nav-link">Задачи</a>
+                <a class="nav-link" href="zada4ki.html">Задачи</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Контакты</a>
@@ -97,70 +99,43 @@
         </nav>
       </header>
       <div class="flex-Container-big">
-        <main class="flex-Container item-flex-big">
-          <section class="item-one-flex">
-            <div class="img-float">
-              <img
-                src="../image/kapitan-400.jpg"
-                srcset="
-                  ../image/kapitan-400.jpg 280w,
-                  ../image/kapitan-800.jpg 800w
-                "
-                sizes="(max-width: 450px) 280px, 
-                  400px"
-                alt="Capitan B.Resler"
-                title="Capitan B.Resler"
-              />
-            </div>
-            <h3 class="catalog">Парапарапам</h3>
-            <div class="bezobt">
-              <pre>
-      А&nbsp;здесь собственно будет
-      еще контент.
-      
-      
-      
-      
-      
-      
-      И&nbsp;здесь... 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      И&nbsp;даже здесь.... 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      Возможно контент 
-      добереться и&nbsp;сюда.
-      </pre
-              >
-            </div>
-            <form action="#">
-              <input type="button" value="buy" />
-            </form>
-          </section>
+        <main class="grid-wrapper item-flex-big">
+          <div class="grid-column1">
+            А здесь мы будем немного баловаться с анимацией.
+          </div>
+          <div class="grid-column">
+            Как насчет того что бы запустить уйму разных цветых шаров на экране
+            ниже.
+          </div>
+          <div class="grid-column ball-setup">
+            Итак сколько ты хочешь видеть шаров?
+            <input class="ball-number" type="number" min="0" />
+            <input class="ball-button" type="button" value="Запустить шары" />
+          </div>
+          <div class="grid-column ball-setup">
+            <span
+              >Здесь будут еще настройки шаров Например прозрачность фона</span
+            >
+            <input
+              class="ball-opacity-range"
+              type="range"
+              min="0"
+              max="1"
+              step="0.05"
+              value="0.25"
+            />
+            <span>А здесь можно выбрать цвет фона</span>
+            <input class="ball-color" type="color" />
+          </div>
+          <div class="grid-column1 relative">
+            <h3 class="bouncing-ball">bouncing balls</h3>
+            <canvas class="ball-result"></canvas>
+          </div>
+          <div class="grid-column"></div>
+          <div class="grid-column"></div>
+          <div class="grid-column"></div>
+          <div class="grid-column"></div>
         </main>
-        <hr />
         <aside class="item-flex flex-addres">
           <address class="goodLink">
             <ul class="contact" id="contact">
@@ -210,9 +185,10 @@
         <div class="bezobt"></div>
       </footer>
     </div>
-    <script src="../Js/datasegodnya.js"></script>
-    <script src="../jquery-3.4.1.min.js"></script>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script src="Js/animtaion.js"></script>
+    <script src="Js/datasegodnya.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>

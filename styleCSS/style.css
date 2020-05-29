@@ -523,11 +523,21 @@ input:not([type="submit"]):active + .input-requirements {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-[class^="grid-column"] {
-  outline: 2px solid rebeccapurple;
-  min-height: 50px;
-}
+
 .grid-column1 {
   grid-column-start: 1;
   grid-column-end: 4;
+}
+.bouncing-ball {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  position: absolute;
+  margin: 0;
+  top: -4px;
+  right: 5px;
+  color: transparent;
+  text-shadow: 0 0 4px white;
+}
+.relative {
+  position: relative;
 }
