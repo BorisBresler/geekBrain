@@ -1,0 +1,189 @@
+#div5 {
+  width: 240px;
+  height: 180px;
+  border: 5px solid black;
+  background-color: greenyellow;
+  margin-left: 45%;
+  display: inline-block;
+}
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: 0.5s all;
+}
+.hidden {
+  display: none;
+}
+.triangular-right {
+  border: 5px solid transparent;
+  border-left: 5px solid green;
+  display: inline-block;
+}
+.triangular-left {
+  border: 5px solid transparent;
+  border-right: 5px solid green;
+  display: inline-block;
+}
+.triangular-down {
+  border: 5px solid transparent;
+  border-top: 5px solid green;
+  display: inline-block;
+}
+.drop-down-menu {
+  display: inline;
+}
+.close-button {
+  float: right;
+}
+h3 {
+  float: left;
+  margin: 5px;
+}
+.message p {
+  clear: both;
+  padding-top: 25px;
+}
+div.slider {
+  position: relative;
+  width: 220px;
+  height: 50px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: honeydew;
+  border-radius: 15%;
+}
+.ul-slider {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+}
+.ul-slider li {
+  display: inline-block;
+}
+.li-slider img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+div.slider div.triangular-right {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  z-index: 1;
+}
+div.slider div.triangular-left {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  z-index: 1;
+}
+div.slider div.triangular-right,
+div.triangular-left:hover {
+  cursor: pointer;
+}
+
+.tree {
+  display: inline-block;
+}
+.note {
+  position: fixed;
+  padding: 10px 20px;
+  border: 1px solid #b3c9ce;
+  border-radius: 4px;
+  text-align: center;
+  font: italic 14px/1.3 sans-serif;
+  color: #333;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 600px;
+  height: 800px;
+  border: 2px solid brown;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-column1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.grid-column2 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+.galleryFoto {
+  width: 90px;
+  height: 120px;
+}
+.center-IMG {
+  width: 300px;
+  height: 400px;
+}
+.selected {
+  background-color: chartreuse;
+  color: rebeccapurple;
+}
+#house {
+  margin-top: 50px;
+  width: 400px;
+  border: 1px solid brown;
+}
+
+#roof {
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 20px solid brown;
+  margin-top: -20px;
+}
+.slider2 {
+  border-radius: 5px;
+  background: red;
+  background: linear-gradient(left top, #e0e0e0, #eeeeee);
+  width: 310px;
+  height: 15px;
+  margin: 10px auto;
+  margin-left: 50px;
+}
+
+.thumb {
+  width: 10px;
+  height: 25px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1000;
+  background: blue;
+  cursor: pointer;
+}
+.draggable {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+}
+.scrollUp {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  z-index: 100;
+}
+.textarea {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
